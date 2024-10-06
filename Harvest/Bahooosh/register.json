@@ -1,0 +1,7 @@
+{
+  "name": "bahooosh",
+  "type": "template",
+  "service": "Harvest\\Bahooosh\\Providers\\BahoooshServiceProvider",
+  "commands": [],
+  "disabled": false
+}

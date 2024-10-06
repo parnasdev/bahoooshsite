@@ -1,0 +1,19 @@
+{
+    "name": "harvest/core",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Harvest\\Core\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "mohammadamin",
+            "email": "mohammad12amin23@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-dom": "*"
+    }
+}

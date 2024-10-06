@@ -1,0 +1,7 @@
+{
+  "name": "[name]",
+  "type": "[type]",
+  "service": "Harvest\\[upper_name]\\Providers\\[upper_name]ServiceProvider",
+  "commands": [],
+  "disabled": false
+}
