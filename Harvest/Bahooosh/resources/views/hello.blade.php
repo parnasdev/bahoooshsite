@@ -1,5 +1,3 @@
 <x-layouts.app>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+  <h1>hello</h1>
 </x-layouts.app>

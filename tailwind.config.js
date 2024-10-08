@@ -4,6 +4,7 @@ export default {
       "./resources/**/*.blade.php",
       "./resources/**/*.js",
       "./resources/**/*.vue",
+      "./Harvest/Bahooosh/resources/**/*.blade.php"
   ],
   theme: {
     extend: {},

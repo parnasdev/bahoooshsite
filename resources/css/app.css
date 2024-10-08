@@ -1,3 +1,351 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --base-color: #007EFF;
+    --dark: #000;
+    --dark-two: #151515;
+    --white: #fff;
+    --gray: #4B4B4B;
+    --green: #2CBE00;
+    --gray-s: #808285;
+    --yellow: #FFC016;
+    --animate: 0.5s ease;
+    --light: #D4D4D4;
+}
+
+.text-gray-s {
+    color: var(--gray-s);
+}
+
+.text-base {
+    color: var(--base-color);
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #F6F9FB;
+    direction: rtl;
+    font-family: 'Ravi' !important;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ravi' !important;
+}
+
+.prs-container {
+    max-width: 1300px;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+@font-face {
+    font-family: Ravi;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../public/assets/assets/Ravi FaNum/Webfonts/woff/RaviFaNum-Regular.woff') format('woff'),
+    url('../../public/assets/assets/Ravi FaNum/Webfonts/woff2/RaviFaNum-Regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-family: RaviBold;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../public/assets/assets/Ravi FaNum/Webfonts/woff/RaviFaNum-SemiBold.woff') format('woff'),
+    url('../../public/assets/assets/Ravi FaNum/Webfonts/woff2/RaviFaNum-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: RaviBoldX;
+    font-style: normal;
+    font-weight: 900 !important;
+    src: url('../../public/assets/assets/Ravi FaNum/Webfonts/woff/RaviFaNum-Bold.woff') format('woff'),
+    url('../../public/assets/assets/Ravi FaNum/Webfonts/woff2/RaviFaNum-Bold.woff2') format('woff2');
+}
+
+.bolX {
+    font-family: RaviBoldX !important;
+}
+
+.RaviBold {
+    font-family: 'RaviBold' !important;
+}
+
+.text-normal {
+    font-size: 13px;
+}
+
+.text-small {
+    font-size: 12px;
+}
+.fs-16{
+    font-size: 16px !important;
+}
+.title-website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    h2 {
+        font-size: 22px;
+        color: var(--dark);
+        margin: 0;
+        font-family: RaviBoldX !important;
+    }
+}
+
+
+/*header*/
+.header {
+    .box-header {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            width: 97%;
+            height: 4px;
+            background: var(--dark);
+            border-radius: 6px;
+        }
+
+    }
+
+    .menu-header {
+        .p-link {
+            position: relative;
+            cursor: pointer;
+            transition: var(--animate);
+
+            &:hover {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    padding: 3px;
+                    border-radius: 50%;
+                    background: var(--base-color);
+                }
+
+                .link {
+                    color: var(--base-color);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .btn-auth {
+        border-radius: 10px;
+        padding: 0 1rem;
+        height: 40px;
+        border: 2px solid var(--dark);
+        transition: var(--animate);
+
+        &:hover {
+            background: var(--dark);
+            color: var(--white);
+        }
+    }
+}
+
+.btn-base {
+    background: var(--dark);
+    transition: var(--animate);
+    font-size: 14px;
+    color: var(--white);
+    border: 2px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'RaviBold' !important;
+
+    &:hover {
+        color: var(--dark);
+        background: var(--white);
+
+        svg {
+            path {
+                fill: var(--dark);
+            }
+        }
+    }
+}
+
+.btn-base-two {
+    background: var(--white);
+    transition: var(--animate);
+    font-size: 14px;
+    color: var(--dark);
+    border: 2px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'RaviBold' !important;
+
+    &:hover {
+        color: var(--white);
+        background: var(--dark);
+
+        svg {
+            path {
+                fill: var(--dark);
+            }
+        }
+    }
+}
+
+/*s-main*/
+.s-main {
+    .p-main {
+        .row-option {
+            border-top: 1px solid var(--light);
+            width: 70%;
+
+            .option {
+                span {
+                    color: var(--gray);
+                    font-family: 'RaviBold' !important;
+                }
+            }
+        }
+
+        .box-video {
+            height: 500px;
+            border-radius: 35px;
+            background: var(--white);
+            width: 85%;
+            position: relative;
+
+            .play-video {
+                outline: none;
+                border: none;
+                background: unset;
+            }
+
+            .img-arrow {
+                position: absolute;
+                bottom: -79px;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+/*s-Building-store*/
+.s-Building-store {
+    .line-s2{
+        position: absolute;
+    }
+    .box-building {
+        border-radius: 30px;
+        height: 150px;
+
+        .floating-box {
+            transform: translateY(-40px);
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .box-more-features {
+        width: 48%;
+    }
+}
+
+
+/*box-store-swiper*/
+.p-swiper {
+    .box-store {
+        height: auto;
+        background: var(--white);
+        border-radius: 30px;
+
+        .logo-store {
+            background: #F6F9FB;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transform: translateY(-50px);
+
+            .img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .next-button {
+        right: -55px;
+    }
+
+    .prev-button {
+        left: -55px;
+    }
+
+    .swiper-slide {
+        opacity: 0.5;
+        scale: 0.9 .9;
+        transition: var(--animate);
+    }
+
+    .swiper-slide-active {
+        opacity: unset !important;
+        scale: 1.1 !important;
+    }
+}
+
+
+/*s-create-store*/
+.s-create-store {
+    background: url("../../public/img/view/png/bg-create-store.png");
+    width: 100%;
+    height: 620px;
+    background-size: contain;
+    margin: 2rem 0;
+    .p-create-store{
+        position: relative;
+        top: 35px;
+    }
+    .list-create-store{
+
+        width: 90%;
+        .top-list{
+            .item-store{
+                width: 26%;
+            }
+        }
+        .bottom-list{
+            flex-direction: row-reverse;
+            .item-store{
+                width: 26%;
+            }
+        }
+    }
+    .btn-base-create-store{
+        width: 30%;
+    }
+    .img-between-rotate{
+        left: -100px;
+    }
+}
+
+/*s-create-store*/
