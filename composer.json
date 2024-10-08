@@ -17,7 +17,6 @@
         "livewire/livewire": "^3.4",
         "morilog/jalali": "^3",
         "scssphp/scssphp": "^1.11.0",
-        "shetabit/payment": "^5.8",
         "teamtnt/laravel-scout-tntsearch-driver": "^14.0",
         "wire-elements/modal": "^2.0"
     },
