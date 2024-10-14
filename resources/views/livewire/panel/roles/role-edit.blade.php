@@ -28,25 +28,6 @@
                                     <x-inputs.panel.text label="برچسب" class="flex-48 mb-2 ml-20" wire:model="roleForm.label" />
                                     <x-inputs.panel.select-multiple label="دسترسی ها" class="flex-48 mb-2 ml-20" wire:model="permissionIds" :options="$permissions" />
                                 </div>
-                                <div class="d-flex align-items-start justify-content-start flex-wrap mt-30">
-                                    {{--                                    <x-inputs.panel.checkbox class="justify-content-start mb-5 flex-100"--}}
-                                    {{--                                                             label="نمایش همه پست ها"--}}
-                                    {{--                                                             wire:model.live="roleForm.see_all_post" />--}}
-                                    <x-inputs.panel.checkbox class="justify-content-start mb-5 flex-100"
-                                                             label="دسترسی به پنل"
-                                                             wire:model.live="roleForm.is_access_panel" />
-                                    <x-inputs.panel.checkbox class="justify-content-start mb-5 flex-100"
-                                                             label="دسترسی به داشبورد"
-                                                             wire:model.live="roleForm.is_access_dashboard" />
-
-                                    <x-inputs.panel.checkbox class="justify-content-start mb-5 flex-100"
-                                                             label=" دسترسی به مسیر دیگر"
-                                                             wire:model.live="roleForm.is_custom" />
-
-                                </div>
-                                <p class="f-14 text-danger">برای وارد کردن نام مسیر با تیم پشتیبانی پارناس تماس حاصل
-                                    فرماید</p>
-                                <x-inputs.panel.text label="نام مسیر" class="mb-2" wire:model="roleForm.custom_route_name_access" :disabled="!$roleForm->is_custom" />
                                 <div class="d-flex flex-100 justify-content-end">
                                     <x-buttons.panel.link color="info" route="{{ route('panel.roles.index') }}" class="justify-content-end mt-10 ml-15">
                                         برگشت

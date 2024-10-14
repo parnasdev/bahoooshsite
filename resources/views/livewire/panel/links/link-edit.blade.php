@@ -41,6 +41,10 @@
                                        class="d-flex align-items-center flex-wrap pt-6"
                                        :options="$link_types">
                 </x-inputs.panel.select>
+
+                <x-buttons.panel.button class="justify-content-end mt-10" wire:click="saveAll">
+                    بروزرسانی همه لینک ها
+                </x-buttons.panel.button>
             </div>
         </div>
     </div>

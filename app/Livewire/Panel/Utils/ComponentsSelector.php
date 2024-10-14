@@ -3,11 +3,14 @@
 namespace App\Livewire\Panel\Utils;
 
 use App\Models\Block;
+use App\Traits\LoadTheme;
 use App\ValueObjects\AreaValueObject;
 use LivewireUI\Modal\ModalComponent;
 
 class ComponentsSelector extends ModalComponent
 {
+    use LoadTheme;
+
     public $q = '';
 
     public $index;
@@ -25,8 +28,8 @@ class ComponentsSelector extends ModalComponent
             $this->dispatch('toast-message', message: "لطفا عنوان صفحه خود را پر کنید", icon: 'danger');
             $this->closeModal();
         }
-        $this->components = collect(config('ofoqbooks.components'))->when(!empty($this->blockId) , function ($collection) {
-           return $collection->where('name' , '!=' , 'ofoqbooks::components.column');
+        $this->components = collect(config($this->theme .'.components'))->when(!empty($this->blockId) , function ($collection) {
+           return $collection->where('name' , '!=' , $this->theme.'::components.general.column-section');
         })->toArray();
     }
 
@@ -37,7 +40,7 @@ class ComponentsSelector extends ModalComponent
 
     public function addComponent($component)
     {
-
+        //TODO: Make Block Repository
         Block::query()->create([
             'parent_id' => $this->blockId,
             'post_id' => $this->pageId,

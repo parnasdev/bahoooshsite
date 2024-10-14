@@ -60,6 +60,7 @@ class LinkItem extends Component
         ]);
     }
 
+    #[On('submitAll')]
     public function submit()
     {
         $this->authorize('links.edit');

@@ -3,7 +3,7 @@
 namespace App\Livewire\Panel\Setting;
 
 use App\Models\Setting;
-use Livewire\Attributes\{On, Layout};
+use Livewire\Attributes\{On, Layout, Title};
 use Livewire\{WithPagination, Component};
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +36,7 @@ class SeoPage extends Component
     }
 
     #[On('update-list')]
+    #[Title('سئو سایت')]
     public function render()
     {
         if ($this->selectBoxAction <> null) {
