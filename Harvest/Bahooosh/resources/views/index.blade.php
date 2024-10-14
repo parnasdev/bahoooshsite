@@ -105,7 +105,7 @@
                 <div
                     class="p-main flex justify-between lg:flex-row xl:flex-row  items-center gap-5 w-full md:flex-col flex-mobi-col sm:flex-col">
                     <div class="text-main flex gap-3 sm:w-full flex-col items-center w-1/2">
-                        <h1 class="text sm:text-xl  md:text-xl lg:text-2xl xl:text-2xl extraBold">
+                        <h1 class="text sm:text-xl   md:text-xl lg:text-2xl xl:text-2xl extraBold">
                             فروشگاه ساز باهوش ؛ کلیکی بسازش !
                         </h1>
                         <span class="text-gray-s text-small">ساده و سریع: فروشگاه آنلاین خود را در کمترین زمان راه‌اندازی کنید.</span>
@@ -715,7 +715,7 @@
 
                                 </button>
                             </div>
-                            <div class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
+                            <div class="thumbnail-plan thumbnail-plan-special bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
                                     <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
                                 </div>
