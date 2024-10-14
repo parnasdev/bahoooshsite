@@ -8,8 +8,10 @@ use App\Enums\PostStatus;
 use App\Enums\PostType;
 use App\Livewire\Forms\Panel\PageForm;
 use App\Livewire\Forms\Panel\PostForm;
+use App\Models\Block;
 use App\Models\Category;
 use App\Models\Post;
+use App\Traits\LoadTheme;
 use App\Traits\WithFilesLivewire;
 use App\Traits\WithTag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -21,15 +23,19 @@ use Livewire\Component;
 #[Layout('components.layouts.panel')]
 class PageEdit extends Component
 {
-    use WithFilesLivewire, WithTag;
+    use WithFilesLivewire, WithTag , LoadTheme;
 
     public PageForm $post;
 
     public $categories;
 
+    public $pageId;
+
     public function mount($id)
     {
         $this->post->setPost($id);
+
+        $this->pageId = $id;
 
         $this->files = $this->post->post->files()->get()->toArray();
     }
@@ -67,10 +73,6 @@ class PageEdit extends Component
 
         $this->syncFiles($this->files ?? [], $this->post->post);
 
-        $this->post->categoryIds = collect($this->post->categoryIds)->merge(collect($this->post->selectedTag)->pluck('id')->toArray())->unique()->values()->toArray();
-
-        $this->post->post->categories()->sync($this->post->categoryIds);
-
         $this->deleteFiles();
 
         $this->dispatch('toast-message' , message: "نوشته شما ویرایش شد." , icon: 'success');
@@ -90,5 +92,18 @@ class PageEdit extends Component
     {
         if (!empty($this->files[$index]['id']))
             $this->deletedFiles[] = $this->files[$index]['id'];
+    }
+
+    #[On('updateBlock')]
+    public function getBlocks()
+    {
+        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+    }
+
+    public function deleteComponent(Block $block)
+    {
+        $block->delete();
+
+        $this->getBlocks();
     }
 }

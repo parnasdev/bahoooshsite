@@ -10,7 +10,7 @@ class LivewireMakeCommand extends Command
 {
     use ComponentParser;
 
-    protected $signature = 'harvest:make-livewire {component} {module} {--view=} {--force} {--inline} {--stub=} {--custom}';
+    protected $signature = 'harvest:livewire {component} {module} {--view=} {--force} {--inline} {--stub=} {--custom}';
 
     /**
      * The console command description.

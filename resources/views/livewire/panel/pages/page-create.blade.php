@@ -180,7 +180,7 @@
                                     </button>
                                 </div>
                             </div>
-                            @if($block['component_name'] == 'ofoqbooks::components.column' && !empty($block['data']['column'] ?? 0))
+                            @if($block['component_name'] == $theme.'::components.general.column-section' && !empty($block['data']['column'] ?? 0))
                                 <div class="d-flex ">
                                     @if($block['data']['column'] - count($block['children']) > 0)
                                         @foreach(range(1 , $block['data']['column'] - count($block['children'])) as $column)
@@ -284,7 +284,7 @@
 
                             <!--? insert data  -->
                             <x-buttons.panel.button class="justify-content-end pt-8 mb-10">
-                                ایجاد صفحه ها
+                                ایجاد صفحه
                             </x-buttons.panel.button>
                         </div>
                     </div>

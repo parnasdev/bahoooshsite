@@ -5,6 +5,7 @@ namespace App\Livewire\Panel\Links;
 use App\Enums\LinkStatus;
 use App\Models\Category;
 use App\Models\Link;
+use App\Models\Page;
 use App\Models\Post;
 use LivewireUI\Modal\ModalComponent;
 
@@ -50,7 +51,7 @@ class LinkSelectModal extends ModalComponent
             'is_link' => true,
             'mega_menu' => false,
             'type' => $this->link_type,
-            'status' => LinkStatus::HIDDEN,
+            'status' => LinkStatus::SHOW,
             'order_item' => $this->getLinkIndex() + 1
         ]);
     }
@@ -72,7 +73,7 @@ class LinkSelectModal extends ModalComponent
             'linktable_id' => $category->id,
             'linktable_type' => get_class($category),
             'type' => $this->link_type,
-            'status' => LinkStatus::HIDDEN,
+            'status' => LinkStatus::SHOW,
             'order_item' => $this->getLinkIndex() + 1
         ]);
     }
@@ -95,7 +96,7 @@ class LinkSelectModal extends ModalComponent
             'linktable_id' => $page->id,
             'linktable_type' => get_class($page),
             'type' => $this->link_type,
-            'status' => LinkStatus::HIDDEN,
+            'status' => LinkStatus::SHOW,
             'order_item' => $this->getLinkIndex() + 1
         ]);
     }
@@ -107,7 +108,7 @@ class LinkSelectModal extends ModalComponent
 
     public function getPage($id)
     {
-        return Post::query()->find($id);
+        return Page::query()->find($id);
     }
 
     public function getLinkIndex()

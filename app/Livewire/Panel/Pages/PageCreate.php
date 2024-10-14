@@ -9,6 +9,7 @@ use App\Livewire\Forms\Panel\PageForm;
 use App\Models\Block;
 use App\Models\Page;
 use App\Models\Post;
+use App\Traits\LoadTheme;
 use App\Traits\WithFilesLivewire;
 use App\Traits\WithTag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
@@ -21,7 +22,7 @@ use Livewire\Component;
 #[Layout('components.layouts.panel')]
 class PageCreate extends Component
 {
-    use WithFilesLivewire, WithTag;
+    use WithFilesLivewire, WithTag , LoadTheme;
 
     public PageForm $post;
 
@@ -70,6 +71,7 @@ class PageCreate extends Component
         }
 
         if (empty($this->post->post)) {
+            //TODO repository page
             $post = Page::query()->create($this->post->all());
             $this->post->post = $post;
             $this->pageId = $post->id;

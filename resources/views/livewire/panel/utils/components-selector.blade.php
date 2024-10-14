@@ -46,8 +46,8 @@
     <div class="body-box">
         <div class="list-sections scroller">
             <template x-for="component in search(components , tabBox)">
-                <div @click="$wire.addComponent(component)" style="width: 100% ; height: 100%;">
-                    <span x-text="component.title"></span>
+                <div @click="$wire.addComponent(component)" style="width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; background: #f2f2f2; border-radius: 15px">
+                    <span class="f-14" x-text="component.title"></span>
                 </div>
             </template>
 

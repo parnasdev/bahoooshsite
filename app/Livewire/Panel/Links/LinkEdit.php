@@ -31,4 +31,11 @@ class LinkEdit extends Component
             ->get();
         return view('livewire.panel.links.link-edit' , compact('categories' , 'links' , 'link_types'));
     }
+
+    public function saveAll()
+    {
+        $this->dispatch('submitAll');
+
+        $this->dispatch('toast-message' , message: "همه لینک ها بروز رسانی شد" , icon:"success");
+    }
 }
