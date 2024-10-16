@@ -1,4 +1,11 @@
-@props(['files' => [] , 'direction' => '/' , 'uploaderComponent' => 'panel.utils' , 'editComponent' => 'panel.utils' , 'thumbInput' => true , 'galleryInput' => false , 'fileInput' => false])
+@props(['files' => [] ,
+ 'direction' => '/' ,
+  'uploaderComponent' => 'panel.utils' ,
+   'editComponent' => 'panel.utils' ,
+    'thumbInput' => true ,
+     'galleryInput' => false ,
+     'fileInput' => false
+     ])
 <div class="" x-data="{
                         files: @entangle($attributes->wire('model')).live,
                         init() {

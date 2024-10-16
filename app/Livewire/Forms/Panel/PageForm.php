@@ -74,7 +74,7 @@ class PageForm extends Form
 
         $this->options = $this->post->options;
 
-        $this->blocks = $this->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+        $this->blocks = $this->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
 
     }
 

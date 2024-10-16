@@ -61,71 +61,71 @@
             {{ $slot }}
         </div>
         <div x-show="tabName === 'advance'">
-            <div class="box-design bg-white mb-10 p-10 py-9">
-                <div class="c-data">
-                    <div class="rx-title pb-10">
-                        <div class="text">
-                            <h6>واکنش‌گرایی</h6>
-                        </div>
-                        <div class="p-rx">
-                            <div class="rx-border-rectangle"></div>
-                            <div class="rx-border-rectangle-after"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start flex-wrap">
-                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش دسکتاپ" leftLabel="عدم نمایش دسکتاپ"
-                                              wire:model="blockForm.show_desktop"/>
-                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش تبلت" leftLabel="عدم نمایش تبلت"
-                                              wire:model="blockForm.show_tablet"/>
-                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش موبایل" leftLabel="عدم نمایش موبایل"
-                                              wire:model="blockForm.show_mobile"/>
-                    </div>
-                </div>
-            </div>
-            <div class="box-design bg-white mb-10 p-10 py-9">
-                <div class="c-data">
-                    <div class="rx-title pb-10">
-                        <div class="text">
-                            <h6>فاصله‌داخلی</h6>
-                        </div>
-                        <div class="p-rx">
-                            <div class="rx-border-rectangle"></div>
-                            <div class="rx-border-rectangle-after"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start flex-88">
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.left" label="چپ"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.right" label="راست"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.top" label="بالا"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.bottom"
-                                               label="پایین"/>
-                        <x-inputs.panel.select parentClass="flex-17 mr-10" wire:model="blockForm.padding.type" label="نوع"
-                                               :options="['%' => '%', 'px' => 'px' , 'em' => 'em' , 'rem' => 'rem']"/>
-                    </div>
-                </div>
-            </div>
-            <div class="box-design bg-white mb-10 p-10 py-9">
-                <div class="c-data">
-                    <div class="rx-title pb-10">
-                        <div class="text">
-                            <h6>حاشیه‌خارجی</h6>
-                        </div>
-                        <div class="p-rx">
-                            <div class="rx-border-rectangle"></div>
-                            <div class="rx-border-rectangle-after"></div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start  flex-88">
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.left" label="چپ"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.right" label="راست"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.top" label="بالا"/>
-                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.bottom"
-                                               label="پایین"/>
-                        <x-inputs.panel.select parentClass="flex-17 mr-10" wire:model="blockForm.margin.type" label="نوع"
-                                               :options="['%' => '%', 'px' => 'px' , 'em' => 'em' , 'rem' => 'rem']"/>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="box-design bg-white mb-10 p-10 py-9">--}}
+{{--                <div class="c-data">--}}
+{{--                    <div class="rx-title pb-10">--}}
+{{--                        <div class="text">--}}
+{{--                            <h6>واکنش‌گرایی</h6>--}}
+{{--                        </div>--}}
+{{--                        <div class="p-rx">--}}
+{{--                            <div class="rx-border-rectangle"></div>--}}
+{{--                            <div class="rx-border-rectangle-after"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="d-flex align-items-start flex-wrap">--}}
+{{--                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش دسکتاپ" leftLabel="عدم نمایش دسکتاپ"--}}
+{{--                                              wire:model="blockForm.show_desktop"/>--}}
+{{--                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش تبلت" leftLabel="عدم نمایش تبلت"--}}
+{{--                                              wire:model="blockForm.show_tablet"/>--}}
+{{--                        <x-inputs.panel.swich class="mr-15" rightLabel="نمایش موبایل" leftLabel="عدم نمایش موبایل"--}}
+{{--                                              wire:model="blockForm.show_mobile"/>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="box-design bg-white mb-10 p-10 py-9">--}}
+{{--                <div class="c-data">--}}
+{{--                    <div class="rx-title pb-10">--}}
+{{--                        <div class="text">--}}
+{{--                            <h6>فاصله‌داخلی</h6>--}}
+{{--                        </div>--}}
+{{--                        <div class="p-rx">--}}
+{{--                            <div class="rx-border-rectangle"></div>--}}
+{{--                            <div class="rx-border-rectangle-after"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="d-flex align-items-start flex-88">--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.left" label="چپ"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.right" label="راست"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.top" label="بالا"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.padding.bottom"--}}
+{{--                                               label="پایین"/>--}}
+{{--                        <x-inputs.panel.select parentClass="flex-17 mr-10" wire:model="blockForm.padding.type" label="نوع"--}}
+{{--                                               :options="['%' => '%', 'px' => 'px' , 'em' => 'em' , 'rem' => 'rem']"/>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="box-design bg-white mb-10 p-10 py-9">--}}
+{{--                <div class="c-data">--}}
+{{--                    <div class="rx-title pb-10">--}}
+{{--                        <div class="text">--}}
+{{--                            <h6>حاشیه‌خارجی</h6>--}}
+{{--                        </div>--}}
+{{--                        <div class="p-rx">--}}
+{{--                            <div class="rx-border-rectangle"></div>--}}
+{{--                            <div class="rx-border-rectangle-after"></div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="d-flex align-items-start  flex-88">--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.left" label="چپ"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.right" label="راست"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.top" label="بالا"/>--}}
+{{--                        <x-inputs.panel.number class="flex-17 mr-10" wire:model="blockForm.margin.bottom"--}}
+{{--                                               label="پایین"/>--}}
+{{--                        <x-inputs.panel.select parentClass="flex-17 mr-10" wire:model="blockForm.margin.type" label="نوع"--}}
+{{--                                               :options="['%' => '%', 'px' => 'px' , 'em' => 'em' , 'rem' => 'rem']"/>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <x-inputs.panel.text wire:model="blockForm.title" label="عنوان بلوک"/>
         </div>
     </div>

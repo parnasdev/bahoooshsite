@@ -102,4 +102,34 @@ class PageCreate extends Component
 
         $this->getBlocks();
     }
+
+    public function goUp($blockId)
+    {
+        $block1 = $this->post->post->blocks()->find($blockId);
+        $block2 = $this->post->post->blocks()->where('order_item' , $block1->order_item - 1)->first();
+
+        if (!empty($block2)) {
+            $block2->order_item = $block1->order_item;
+            $block2->save();
+            $block1->order_item = $block1->order_item - 1;
+            $block1->save();
+        }
+
+        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+    }
+
+    public function goDown($blockId)
+    {
+        $block1 = $this->post->post->blocks()->find($blockId);
+        $block2 = $this->post->post->blocks()->where('order_item' , $block1->order_item + 1)->first();
+
+        if (!empty($block2)) {
+            $block2->order_item = $block1->order_item;
+            $block2->save();
+            $block1->order_item = $block1->order_item + 1;
+            $block1->save();
+        }
+
+        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+    }
 }

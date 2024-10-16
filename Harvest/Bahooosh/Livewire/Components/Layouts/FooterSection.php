@@ -2,10 +2,13 @@
 
 namespace Harvest\Bahooosh\Livewire\Components\Layouts;
 
-use Livewire\Component;
+use App\Livewire\ComponentBuilder;
+use App\Models\Block;
 
-class FooterSection extends Component
+
+class FooterSection extends ComponentBuilder
 {
+
     public function render()
     {
         return view('bahooosh::livewire.components.layouts.footer-section');

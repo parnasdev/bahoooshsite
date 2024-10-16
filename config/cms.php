@@ -2,9 +2,9 @@
 
 return [
     // dynamic component start with test::component-location
-    'theme' => 'bahooosh',
+    'theme' => env('CMS_THEME', 'default'),
     // header component without package name
-    'header' => 'components.layouts.header-section',
+    'header_id' => env('HEADER_ID'),
     // footer component without package name
-    'footer' => 'components.layouts.header-section',
+    'footer_id' => env('FOOTER_ID'),
 ];
