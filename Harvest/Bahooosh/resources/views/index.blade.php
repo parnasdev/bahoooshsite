@@ -160,14 +160,15 @@
 
                     <div class="video-main  flex sm:w-full justify-end w-1/2">
                         <div class="box-video flex justify-center items-center  pos-relative">
-                            <button class="play-video pos-absolute cursor-pointer">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90"
-                                     viewBox="0 0 123.246 123.246">
-                                    <path id="fi-rr-caret-circle-down"
-                                          d="M61.623,123.246a61.623,61.623,0,1,1,61.623-61.623,61.623,61.623,0,0,1-61.623,61.623Zm0-112.975a51.352,51.352,0,1,0,51.353,51.352A51.352,51.352,0,0,0,61.623,10.27Zm-29.43,49.3L58.316,86.036a4.622,4.622,0,0,0,6.614,0L91.053,59.569a4.745,4.745,0,0,0-3.307-8.088H35.5a4.745,4.745,0,0,0-3.307,8.088Z"
-                                          transform="translate(0 123.246) rotate(-90)"/>
-                                </svg>
-                            </button>
+{{--                            <button class="play-video pos-absolute cursor-pointer">--}}
+{{--                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90"--}}
+{{--                                     viewBox="0 0 123.246 123.246">--}}
+{{--                                    <path id="fi-rr-caret-circle-down"--}}
+{{--                                          d="M61.623,123.246a61.623,61.623,0,1,1,61.623-61.623,61.623,61.623,0,0,1-61.623,61.623Zm0-112.975a51.352,51.352,0,1,0,51.353,51.352A51.352,51.352,0,0,0,61.623,10.27Zm-29.43,49.3L58.316,86.036a4.622,4.622,0,0,0,6.614,0L91.053,59.569a4.745,4.745,0,0,0-3.307-8.088H35.5a4.745,4.745,0,0,0-3.307,8.088Z"--}}
+{{--                                          transform="translate(0 123.246) rotate(-90)"/>--}}
+{{--                                </svg>--}}
+{{--                            </button>--}}
+                            <img class="img-gif" src="img/view/gif/faq.gif" alt="">
                             <img width="45" src="img/view/png/arrow-video-main.png" alt="" class="img-arrow">
                         </div>
 
