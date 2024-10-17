@@ -1693,16 +1693,131 @@ body {
 }
 
 
+/*aboutPage*/
+.aboutPage {
+    .border-row-one {
+        .img-left {
+            bottom: 0;
+            left: 8rem;
+        }
+    }
+
+    .box-img {
+        border-radius: 25px;
+        height: 492px;
+    }
+    .box-single{
+        border-radius: 25px;
+        height: 250px;
+    }
+    .box-building {
+        border-radius: 30px;
+        height: 150px;
+
+        .floating-box {
+            transform: translateY(-40px);
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+    .col-support {
+        height: auto;
+
+        .box-tel {
+            width: 42%;
+            height: 42px;
+            border: 2px solid var(--dark);
+            background: #FFC016;
+            border-radius: 8px;
+        }
+
+        .box-telegram {
+            width: 42%;
+            height: 42px;
+            border: 2px solid var(--dark);
+            background: var(--base-color);
+            border-radius: 8px;
+            color: var(--white);
+        }
+    }
+    .active-border{
+        border: 1px solid var(--gray-s) !important;
+    }
+    .deactive-border{
+        border: 1px solid var(--light) !important;
+    }
+    .inp-full{
+        border: #80828580;
+        height: 50px;
+        border-radius: 10px;
+        position: relative;
+        border: 1px solid var(--light);
+
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+        label{
+            transition: var(--animate);
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            transform: translateY(-5px);
+        }
+        .labeDown{
+            width: 100%;
+            transition: var(--animate);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            top: 6px !important;
+        }
+        .labelUp{
+            width: auto;
+            transition: var(--animate);
+            height: auto;
+            font-size: 11px !important;
+            top: 7px !important;
+        }
+    }
+    .textarea{
+        textarea{
+            border: #80828580;
+            height: 270px;
+            border-radius: 10px;
+            position: relative;
+            resize: none;
+            border: 1px solid var(--light);
+            padding: 12px;
+            outline: none;
+            font-size: 13px;
+            &::placeholder{
+                color: var(--light);
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 700px) {
-    .box-rate{
+    .text-s-mobi {
+        transform: rotate(-29deg);
+        font-size: 9px !important;
+    }
+
+    .box-rate {
         background: unset !important;
         border: none !important;
     }
-    .row-users{
-        .btn-base{
+
+    .row-users {
+        .btn-base {
             font-size: 11px !important;
         }
     }
+
     .row-pagination {
         width: 90% !important;
         margin-inline: auto;
@@ -1959,6 +2074,73 @@ body {
         blockquote {
             width: 100% !important;
             font-size: 13px !important;
+        }
+    }
+
+    .aboutPage {
+        .border-row-one {
+            .img-left {
+                left: 1rem !important;
+                width: 60px !important;
+            }
+            .img-right{
+                display: none;
+            }
+        }
+
+        .box-img {
+            border-radius: 25px;
+            height: 300px;
+        }
+        .box-single{
+            border-radius: 25px;
+            height: 250px;
+        }
+        .box-building {
+            border-radius: 30px;
+            height: 150px;
+
+            .floating-box {
+                transform: translateY(-40px);
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+        }
+        .col-support {
+            height: auto;
+
+            .box-tel {
+                width: 90%;
+                height: 42px;
+                border: 2px solid var(--dark);
+                background: #FFC016;
+                border-radius: 8px;
+                font-size: 15px;
+            }
+
+            .box-telegram {
+                width: 90%;
+                height: 42px;
+                border: 2px solid var(--dark);
+                background: var(--base-color);
+                border-radius: 8px;
+                color: var(--white);
+                font-size: 15px;
+            }
+        }
+        .box-building {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            height: 130px !important;
+
+            .floating-box {
+                width: 100% !important;
+                flex-direction: row !important;
+                transform: unset !important;
+            }
         }
     }
 }

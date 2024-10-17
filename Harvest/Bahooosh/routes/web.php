@@ -9,3 +9,5 @@ Route::view('/portfolio', 'bahooosh::portfolio');
 Route::view('/posts', 'bahooosh::posts');
 Route::view('/posts/info', 'bahooosh::postInfo');
 Route::view('/notfound', 'bahooosh::404');
+Route::view('/aboutus', 'bahooosh::aboutus');
+Route::view('/contactus', 'bahooosh::contactus');

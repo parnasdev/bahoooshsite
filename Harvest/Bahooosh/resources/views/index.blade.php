@@ -989,8 +989,7 @@
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
                                     <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
                                 </div>
-                                <span style="transform: rotate(-29deg);
-    font-size: 9px !important;" class="text-s absolute left-0 top-5 text-small RaviBold">انتخاب هوشمندانه</span>
+                                <span class="text-s text-s-mobi absolute left-0 top-5 text-small RaviBold">انتخاب هوشمندانه</span>
                                 <div class="detail-top mt-12 px-4 flex justify-center flex-col items-center w-full">
                                     <div class="text  flex flex-col items-center">
 
