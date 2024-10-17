@@ -98,6 +98,6 @@
 
         {{--------header--------}}
     @else
-
+        <x-bahooosh::layouts.header-edit-form :$blockForm/>
     @endif
 </div>

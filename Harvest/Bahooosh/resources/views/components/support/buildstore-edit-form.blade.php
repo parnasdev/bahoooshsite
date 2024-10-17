@@ -21,7 +21,7 @@
             @foreach($blockForm->data['services'] as $index => $service)
                 <div class="d-flex flex-wrap justify-content-between align-items-center flex-100">
                     <div class="flex-5"><span class="f-16 f-bold">{{ $index + 1 }}</span></div>
-                    <x-inputs.panel.single-file-picker class="flex-30" label="عنوان" wire:model="blockForm.data.services.{{ $index }}.image_url" />
+                    <x-inputs.panel.single-file-picker class="flex-30" label="عکس" wire:model="blockForm.data.services.{{ $index }}.image_url" />
                     <x-inputs.panel.text class="flex-20" label="عنوان" wire:model="blockForm.data.services.{{ $index }}.title" />
                     <x-inputs.panel.textarea class="flex-30" label="متن " wire:model="blockForm.data.services.{{ $index }}.description" />
                     <x-buttons.panel.button class="justify-content-end flex-10" color="danger" wire:click="deleteItem({{ $index }})">

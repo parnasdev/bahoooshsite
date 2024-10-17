@@ -19,7 +19,7 @@
             @foreach($blockForm->data['plans'] as $index => $plan)
                 <div class="d-flex flex-wrap justify-content-between align-items-center flex-100">
                     <div class="flex-5"><span class="f-16 f-bold">{{ $index + 1 }}</span></div>
-                    <x-inputs.panel.single-file-picker class="flex-30" label="عنوان" wire:model="blockForm.data.plans.{{ $index }}.image_url" />
+                    <x-inputs.panel.single-file-picker class="flex-30" label="عکس" wire:model="blockForm.data.plans.{{ $index }}.image_url" />
                     <x-inputs.panel.text class="flex-48" label="عنوان" wire:model="blockForm.data.plans.{{ $index }}.title" />
                     <x-inputs.panel.text class="flex-48" label="زیرعنوان" wire:model="blockForm.data.plans.{{ $index }}.subtitle" />
                     <x-inputs.panel.swich class="flex-48" rightLabel="پیشنهادی" wire:model="blockForm.data.plans.{{ $index }}.is_special" />

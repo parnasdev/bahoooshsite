@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Panel\Setting;
 
+use App\Models\Block;
 use App\Models\Setting;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -20,6 +21,8 @@ class PublicForm extends Component
     public $palletIndex;
 
     public $backColor;
+    public Block $headerBlock;
+    public Block $footerBlock;
 
     protected $queryString = ['settingTab'];
 
@@ -35,6 +38,9 @@ class PublicForm extends Component
                 $this->setting[$item] = getValue($item);
             }
         }
+
+        $this->headerBlock =  Block::query()->find(config('cms.header_id'));
+        $this->footerBlock =  Block::query()->find(config('cms.footer_id'));
     }
 
     public function render()
