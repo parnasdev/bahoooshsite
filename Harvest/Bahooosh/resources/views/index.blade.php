@@ -989,9 +989,11 @@
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
                                     <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
                                 </div>
+                                <span style="transform: rotate(-29deg);
+    font-size: 9px !important;" class="text-s absolute left-0 top-5 text-small RaviBold">انتخاب هوشمندانه</span>
                                 <div class="detail-top mt-12 px-4 flex justify-center flex-col items-center w-full">
-                                    <div class="text flex flex-col items-center">
-                                        <span class="text-s text-small RaviBold">انتخاب هوشمندانه</span>
+                                    <div class="text  flex flex-col items-center">
+
                                         <h3 class="text-md RaviBold text-gray-s">اشتراک یکــساله</h3>
                                         <span class="text-small text-base RaviBold">دو ماه بیشتر ! یک سال پیشرفت.</span>
                                     </div>
