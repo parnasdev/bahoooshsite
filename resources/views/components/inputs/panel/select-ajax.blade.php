@@ -1,4 +1,4 @@
-@props(['route' => '' , 'label' => null])
+@props(['route' => '' , 'label' => null , 'multiple' => false , 'oldSelected' => null])
 <div x-data="{
     selected: {id: 0 , text: ''},
     value: @entangle($attributes->wire('model')),
@@ -6,6 +6,13 @@
     options: [],
     show: false,
     init() {
+        if (@js($multiple)) {
+            this.selected = []
+        }
+
+        if (@js(!empty($oldSelected))) {
+            this.selected = @js($oldSelected)
+        }
         $watch('keyword' , value => {
             if (value !== '')
                 this.search();
@@ -21,9 +28,17 @@
 
     },
     selectOption(item) {
-        this.selected = item;
-        this.value = item.id
-        console.log(  this.value)
+        if (@js($multiple)) {
+            this.selected.push(item);
+            this.value.push(item.id)
+        } else {
+             this.selected = item;
+            this.value = item.id
+        }
+    },
+    deleteOption(index) {
+        this.selected.splice(index , 1);
+        this.value.splice(index , 1);
     }
 
 }">
@@ -41,13 +56,25 @@
                 </label>
             </div>
         @endif
-        <div class="d-flex flex-row flex-wrap scroller mb-2" style="max-height: 75px">
-            <div class="d-flex pos-relative tag-label ml-5">
+        @if($multiple)
+            <div class="d-flex flex-row flex-wrap scroller mb-2" style="max-height: 75px">
+                <template x-for="(item , index) in selected">
+                    <div class="d-flex pos-relative tag-label ml-5" @click="deleteOption(index)">
+                        <span class="text-white bg-secondary radius-5 f-14 px-4 px-10 mb-5 cursor-pointer"
+                              x-text="item.text">
+                        </span>
+                    </div>
+                </template>
+            </div>
+        @else
+            <div class="d-flex flex-row flex-wrap scroller mb-2" style="max-height: 75px">
+                <div class="d-flex pos-relative tag-label ml-5">
                 <span class="text-white bg-secondary radius-5 f-14 px-4 px-10 mb-5 cursor-pointer"
                       x-text="selected.text">
                 </span>
+                </div>
             </div>
-        </div>
+        @endif
         <input
             id="tags" name="tags" x-model.debounce.700ms="keyword"/>
         <ul class="flex-wrap mr-19 mt-10 scroller" style="width:98%; max-height: 150px"

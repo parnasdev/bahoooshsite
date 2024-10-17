@@ -7,16 +7,15 @@
                           d="M26.363,5.884A14.531,14.531,0,0,0,12.585.142,14.64,14.64,0,0,0,3.01,23.53a5.17,5.17,0,0,1,.984,3.135v1.293a4,4,0,0,0,3.994,3.994h9.32A4,4,0,0,0,21.3,27.958h.658a6.677,6.677,0,0,0,6.6-5.785l.292-2.2h.439a2.608,2.608,0,0,0,2.663-2.663c0-1.891-3.9-9.338-5.59-11.425Zm-11.717,6.1a2.663,2.663,0,1,1-2.663,2.663A2.665,2.665,0,0,1,14.645,11.983Zm13.04,5.326a1.33,1.33,0,0,0-1.319,1.157l-.445,3.359A4.008,4.008,0,0,1,21.96,25.3H19.971a1.33,1.33,0,0,0-1.331,1.331v1.331a1.332,1.332,0,0,1-1.331,1.331H7.988a1.332,1.332,0,0,1-1.331-1.331V26.666a7.844,7.844,0,0,0-1.532-4.754A11.977,11.977,0,0,1,12.948,2.779c.122-.017.245-.032.366-.045V9.487a5.326,5.326,0,1,0,2.663,0V2.735A11.914,11.914,0,0,1,24.262,7.52c1.74,2.152,4.86,8.591,5.026,9.79h-1.6Z"
                           transform="translate(0 0.002)"/>
                 </svg>
-                <h2>پشتیبانی و مشاوره رایگان</h2>
+                <h2>{{ $block->data['title'] }}</h2>
             </div>
             <p class="description w-2/3 mt-9 text-normal text-center text-gray">
-                جهت دریافت اطلاعات بیشتر و مشاوره رایگان قبل از ساخت فروشگاه،
-                می توانید با شماره زیر تماس بگیرید.
+                {{ $block->data['description'] }}
             </p>
-            <h5 class="bolX text-sm mt-4">از شنبه تا چهارشنبه - ساعت : ۱۰ صبح الی ۱۸</h5>
+            <h5 class="bolX text-sm mt-4">{{ $block->data['subtitle'] }}</h5>
             <div class="w-full mt-5 boxes flex flex-col items-center justify-center gap-2">
-                <a href="" class="box-tel flex justify-center bolX text-lg items-center relative">
-                    ۰۲۱-۷۱۰۵۷۵۵۹
+                <a href="{{ $block->data['link1_url'] }}" class="box-tel flex justify-center bolX text-lg items-center relative">
+                    {{ $block->data['link1_text'] }}
                     <svg class="absolute left-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                          viewBox="0 0 30.398 30.442">
                         <path id="fi-rr-call-history"
@@ -24,8 +23,8 @@
                               transform="translate(-0.033 0.024)"/>
                     </svg>
                 </a>
-                <a href="" class="box-telegram flex justify-center bolX text-lg items-center relative">
-                    @BahoooshSupport
+                <a href="{{ $block->data['link2_url'] }}" class="box-telegram flex justify-center bolX text-lg items-center relative">
+                    {{ $block->data['link2_text'] }}
                     <svg class="absolute left-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                          viewBox="0 0 29.834 29.837">
                         <path id="fi-rr-paper-plane"
@@ -37,6 +36,6 @@
             </div>
         </div>
     @else
-
+        <x-bahooosh::support.contact-edit-form :$blockForm/>
     @endif
 </div>
