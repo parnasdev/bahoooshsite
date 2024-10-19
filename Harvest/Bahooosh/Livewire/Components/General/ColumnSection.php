@@ -8,6 +8,7 @@ class ColumnSection extends ComponentBuilder
 {
     public function render()
     {
-        return view('bahooosh::livewire.components.general.column-section');
+        $blocks = $this->block->children()->orderBy('order_item')->get();
+        return view('bahooosh::livewire.components.general.column-section' , compact('blocks'));
     }
 }

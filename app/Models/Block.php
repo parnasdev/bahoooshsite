@@ -18,7 +18,7 @@ class Block extends Model
         'title',
         'is_livewire',
         'show_desktop',
-        'show_table',
+        'show_tablet',
         'show_mobile',
         'data',
         'category',

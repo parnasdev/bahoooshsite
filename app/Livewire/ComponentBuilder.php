@@ -22,6 +22,7 @@ abstract class ComponentBuilder extends Component
     public function fillData(): void
     {
         $this->blockForm->data = $this->block->data;
+        $this->blockForm->parent_id = $this->block->parent_id;
         $this->blockForm->post_id = $this->block->post_id;
         $this->blockForm->title = $this->block->title;
         $this->blockForm->component_name = $this->block->component_name;

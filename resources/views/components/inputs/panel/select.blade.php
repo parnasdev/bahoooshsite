@@ -25,11 +25,16 @@
                     </option>
                 @endif
 
-                @foreach ($options ?? [] as $key => $option)
-                    <option value="{{ $key }}">
-                        {{ __($option) }}
-                    </option>
-                @endforeach
+                @empty($options)
+                    {{ $slot }}
+                @else
+                    @foreach ($options ?? [] as $key => $option)
+                        <option value="{{ $key }}">
+                            {{ __($option) }}
+                        </option>
+                    @endforeach
+
+                @endempty
             </select>
         </div>
     </div>

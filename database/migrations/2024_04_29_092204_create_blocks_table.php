@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('blocks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('parent_id')->nullable()->constrained('blocks')->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignId('post_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('post_id')->nullable()->constrained()->cascadeOnDelete();
             $table->string('component_name');
             $table->string('title');
             $table->boolean('show_desktop')->default(true);

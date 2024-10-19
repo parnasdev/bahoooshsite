@@ -15,5 +15,8 @@ enum BlockCategory: string
     case CUSTOMER_COMMENT = 'customer_comment';
     case NEWSLETTER = 'newsletter';
     case BRAND = 'brand';
+
     case GENERAL = 'general';
+    case LAYOUT = 'layout';
+    case STATIC = 'static';
 }

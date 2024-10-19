@@ -9,7 +9,6 @@ use App\Models\Traits\HasComment;
 use App\Models\Traits\HasCategory;
 use App\Models\Traits\UsePostFile;
 use Harvest\Core\Scopes\PostTypeScope;
-use Harvest\Ecommerce\Models\Traits\HasProduct;
 use Illuminate\Database\Eloquent\Attributes\ScopedBy;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -21,6 +20,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Laravel\Scout\Searchable;
+
 #[ScopedBy([PostTypeScope::class])]
 class Post extends Model implements CanVisit
 {

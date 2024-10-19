@@ -15,6 +15,7 @@ use App\Traits\LoadTheme;
 use App\Traits\WithFilesLivewire;
 use App\Traits\WithTag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
+use Livewire\Attributes\Computed;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
@@ -95,9 +96,13 @@ class PageEdit extends Component
     }
 
     #[On('updateBlock')]
+    #[Computed]
     public function getBlocks()
     {
-        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item'))->orderBy('order_item')->get()
+            ->each(function ($block , $key) {
+
+            })->toArray();
     }
 
     public function deleteComponent(Block $block)
@@ -105,5 +110,35 @@ class PageEdit extends Component
         $block->delete();
 
         $this->getBlocks();
+    }
+
+    public function goUp($blockId)
+    {
+        $block1 = $this->post->post->blocks()->find($blockId);
+        $block2 = $this->post->post->blocks()->where('order_item' , $block1->order_item - 1)->first();
+
+        if (!empty($block2)) {
+            $block2->order_item = $block1->order_item;
+            $block2->save();
+            $block1->order_item = $block1->order_item - 1;
+            $block1->save();
+        }
+
+        $this->dispatch('updateBlock');
+    }
+
+    public function goDown($blockId)
+    {
+        $block1 = $this->post->post->blocks()->find($blockId);
+        $block2 = $this->post->post->blocks()->where('order_item' , $block1->order_item + 1)->first();
+
+        if (!empty($block2)) {
+            $block2->order_item = $block1->order_item;
+            $block2->save();
+            $block1->order_item = $block1->order_item + 1;
+            $block1->save();
+        }
+
+        $this->dispatch('updateBlock');
     }
 }

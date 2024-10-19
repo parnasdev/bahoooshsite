@@ -376,7 +376,7 @@
                             <div class="rx-border-rectangle-after"></div>
                         </div>
                     </div>
-
+                    <livewire:dynamic-component :is="$headerBlock->component_name" :key="$headerBlock->component_name" :block="$headerBlock" :is_edit="true"/>
                 </div>
             </div>
         </div>
@@ -393,11 +393,11 @@
                             <div class="rx-border-rectangle-after"></div>
                         </div>
                     </div>
-
+                    <livewire:dynamic-component :is="$footerBlock->component_name" :key="$footerBlock->component_name" :block="$footerBlock" :is_edit="true"/>
                 </div>
             </div>
         </div>
-        <div class="c-btn justify-content-end pt-10">
+        <div class="c-btn justify-content-end pt-10" x-show="changeTab == 'logo'">
             <button class="btn bg-primary justify-content-end text-white radius-5">
                 اعمال تغییرات
             </button>

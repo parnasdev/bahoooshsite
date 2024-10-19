@@ -133,7 +133,7 @@
                                             <div
                                                 class="d-flex flex-direction-column align-items-center justify-content-center m-auto">
                                                 <button type="button"
-                                                        @click="goDown(index)"
+                                                        wire:click="goDown({{$block['id']}})"
                                                 >
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="8"
                                                          height="8" viewBox="0 0 11.905 6.803">
@@ -149,7 +149,7 @@
                                             <div
                                                 class="d-flex flex-direction-column align-items-center justify-content-center m-auto">
                                                 <button type="button"
-                                                        @click="goUp(index)"
+                                                        wire:click="goUp({{$block['id']}})"
                                                 >
 
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"

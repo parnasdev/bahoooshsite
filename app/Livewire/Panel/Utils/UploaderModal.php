@@ -23,7 +23,7 @@ class UploaderModal extends ModalComponent
 
     public $builder = false;
 
-    public $componentTo = '';
+    public string $eventComponent = '';
 
     protected $listeners = ['getData_fileManager'];
 
@@ -105,8 +105,8 @@ class UploaderModal extends ModalComponent
             ]
         ]);
 
-        if (!empty($this->componentTo)) {
-            $this->dispatch('prs-file-manager' , urls: $this->selectedFiles , file_type: $this->type)->to($this->componentTo);
+        if (!empty($this->eventComponent)) {
+            $this->dispatch($this->eventComponent , urls: $this->selectedFiles , file_type: $this->type);
         }else {
             $this->dispatch('prs-file-manager' , urls: $this->selectedFiles , file_type: $this->type);
         }

@@ -28,9 +28,7 @@ class ComponentsSelector extends ModalComponent
             $this->dispatch('toast-message', message: "لطفا عنوان صفحه خود را پر کنید", icon: 'danger');
             $this->closeModal();
         }
-        $this->components = collect(config($this->theme .'.components'))->when(!empty($this->blockId) , function ($collection) {
-           return $collection->where('name' , '!=' , $this->theme.'::components.general.column-section');
-        })->toArray();
+        $this->components = collect(config($this->theme .'.components'))->toArray();
     }
 
     public function render()
@@ -50,13 +48,13 @@ class ComponentsSelector extends ModalComponent
             'show_desktop' => true,
             'show_tablet' => true,
             'show_mobile' => true,
-            'data' => [],
+            'data' => $component['data'],
             'category' => $component['category'],
             'padding' => new AreaValueObject(0, 0, 0, 0),
             'margin' => new AreaValueObject(0, 0, 0, 0),
             'order_item' => Block::query()->where('post_id' , $this->pageId)
                 ->when(!empty($this->blockId) , fn($q) => $q->where('parent_id' , $this->blockId))
-                ->select('id')->get()->count()
+                ->select('id')->get()->count() + 1
         ]);
 
         $this->dispatch('updateBlock');
