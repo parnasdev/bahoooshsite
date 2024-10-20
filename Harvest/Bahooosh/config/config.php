@@ -149,8 +149,29 @@ return [
             'category' => 'support'
         ),
         array(
+            'name' => 'bahooosh::components.support.plans2-section',
+            'title' => 'پلن 2 ها',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
+            'name' => 'bahooosh::components.support.plans-service-section',
+            'title' => 'خدمات پلن ها',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
             'name' => 'bahooosh::components.support.contact-section',
             'title' => 'کادر تماس باما',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
+            'name' => 'bahooosh::components.support.contact2-section',
+            'title' => 'کادر تماس 2 باما',
             'data' => [],
             'is_livewire' => true,
             'category' => 'support'

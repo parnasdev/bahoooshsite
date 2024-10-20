@@ -2,7 +2,7 @@
     @if(!$is_edit)
         <div class="item bg-white rounded-3xl h-72 w-full flex flex-col items-center p-3">
             <div class="img w-full flex items-end mt-2 justify-center  h-20">
-                <img width="70" src="{{ $block->data['image_url'] ?? '' }}" alt="">
+                <img width="70" src="{{ asset($block->data['image_url'] ?? '') }}" alt="">
             </div>
             <h3 class="text-base text-sm  mt-3 bolX">{{ $block->data['title'] ?? '' }}</h3>
             @if(($block->data['subtitle_type'] ?? 1) == 1)

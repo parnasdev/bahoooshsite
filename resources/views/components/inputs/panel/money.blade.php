@@ -9,7 +9,7 @@
                 }
             })
 
-            if (this.wireModel !== '' || this.wireModel !== undefined || this.wireModel !== null) {
+            if (this.wireModel !== '' || this.wireModel !== undefined) {
                 this.value = new Intl.NumberFormat('en').format(this.wireModel)
 
                 $watch('wireModel' , value => {

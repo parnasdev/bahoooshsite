@@ -2,11 +2,7 @@
     @if(!$is_edit)
         <div class="p-plans">
             <div class="title-website">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 31.692 31.696">
-                    <path id="fi-rr-diamond"
-                          d="M30.666,7.585,26.69,2.212A5.289,5.289,0,0,0,22.392,0H9.3A5.283,5.283,0,0,0,5.019,2.187L.971,7.6a5.273,5.273,0,0,0,.162,6.318L12.745,30.2a3.958,3.958,0,0,0,6.244-.053l11.519-16.1a5.283,5.283,0,0,0,.158-6.459ZM24.554,3.765,28.54,9.151c.021.029.026.063.048.094H22.127l-1.886-6.6h2.151a2.657,2.657,0,0,1,2.162,1.124ZM15.848,25.249,12.283,11.886h7.132Zm-3.531-16,1.886-6.6h3.291l1.886,6.6Zm-5.163-5.5A2.651,2.651,0,0,1,9.3,2.641h2.151L9.57,9.245H3.062c.018-.029.024-.065.045-.092ZM3.233,12.315a2.509,2.509,0,0,1-.244-.429H9.551l3.954,14.831ZM18.187,26.73l3.962-14.844h6.585a2.774,2.774,0,0,1-.321.556Z"
-                          transform="translate(0.001)"/>
-                </svg>
+                {!! $block->data['icon'] ?? '' !!}
                 <h2>{{ $block->data['title'] }}</h2>
             </div>
             <div class="show-desktop">
@@ -77,11 +73,12 @@
                             <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
                                 <img class="relative" width="40" src="{{ asset($plan['image_url']) }}" alt="">
                             </div>
+                            @if($plan['is_special'])
+                                <span class="text-s text-s-mobi absolute left-0 top-5 text-small RaviBold">انتخاب هوشمندانه</span>
+                            @endif
                             <div class="detail-top mt-12 px-4 flex justify-center flex-col items-center w-full">
                                 <div class="text flex flex-col items-center">
-                                    @if($plan['is_special'])
-                                        <span class="text-s text-small RaviBold">انتخاب هوشمندانه</span>
-                                    @endif
+
 
                                     <h3 class="text-md RaviBold text-gray-s">{{ $plan['title'] }}</h3>
                                     <span class="text-small text-base RaviBold">{{ $plan['subtitle'] }}</span>

@@ -7,7 +7,9 @@
         <div class="flex-100 w-100">
 
             <div class="d-flex flex-wrap justify-content-between flex-100">
+                <x-inputs.panel.textarea class="flex-100" label="ایکون" wire:model="blockForm.data.icon" />
                 <x-inputs.panel.text class="flex-48" label="عنوان" wire:model="blockForm.data.title" />
+                <x-inputs.panel.textarea class="flex-100" label="عنوان" wire:model="blockForm.data.description" />
                 <x-inputs.panel.text class="flex-48" label="متن لینک" wire:model="blockForm.data.link_text" />
                 <x-inputs.panel.text class="flex-48" label="لینک" wire:model="blockForm.data.link_url" />
             </div>
