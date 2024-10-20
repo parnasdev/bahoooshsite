@@ -5,7 +5,7 @@
             <div
                 class="box-header w-full my-3 bg-white h-20 rounded-xl flex align-center px-5 items-center justify-center">
                 <a href="" class="logo-website w-1/5 flex align-center">
-                    <img class="object-contain" width="170" src="img/view/png/New%20Logo%20-%20Font.png" alt="">
+                    <img class="object-contain" width="170" src="/img/view/png/New%20Logo%20-%20Font.png" alt="">
                 </a>
                 <ul class="menu-header h-full p-0 flex gap-16 w-2/5">
                     <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"

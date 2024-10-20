@@ -25,6 +25,7 @@ class PageForm extends Form
     public $status = PostStatus::PUBLISHED->value;
     public $options = [
         'page_type' => PageType::BUILDER_MODE->value,
+        'class' => ''
     ];
     public $user_id;
     public $type;

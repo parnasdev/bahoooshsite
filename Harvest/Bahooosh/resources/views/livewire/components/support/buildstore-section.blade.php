@@ -13,7 +13,7 @@
                 @foreach($block->data['services'] as $service)
                     <div class="box-building  bg-white  w-full">
                         <div class="floating-box flex flex-col items-center w-full ">
-                            <img class="img" width="80" src="{{ $service['image_url'] }}" alt="">
+                            <img class="img" width="80" src="{{ asset($service['image_url']) }}" alt="">
                             <h3 class="text-base RaviBold">{{ $service['title'] }}</h3>
                             <span class="text-small text-gray w-10/12 mt-2 text-center RaviBold">
                                 {{ $service['description'] }}

@@ -29,6 +29,33 @@ return [
             'category' => 'general'
         ),
         array(
+            'name' => 'bahooosh::components.general.hero2-section',
+            'title' => 'هیرو 2',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
+        array(
+            'name' => 'bahooosh::components.general.empty-box',
+            'title' => 'باکس خالی',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
+        array(
+            'name' => 'bahooosh::thumbnails.service-box',
+            'title' => 'باکس سرویس',
+            'data' => [
+                'class_desktop' => '',
+                'class_mobile' => '',
+                'title' => '',
+                'description' => '',
+                'image_url' => '',
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
             'name' => 'bahooosh::components.support.buildstore-section',
             'title' => 'ساختن فروشگاه',
             'data' => [],
@@ -36,9 +63,74 @@ return [
             'category' => 'support'
         ),
         array(
+            'name' => 'bahooosh::components.support.service-section',
+            'title' => 'سرویس ها',
+            'data' => [
+                'class' => '',
+                'title' => '',
+                'icon' => '',
+                'column' => 4
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
+            'name' => 'bahooosh::components.support.package-section',
+            'title' => 'پکیچ ها/نمونه کارها',
+            'data' => [
+                'class' => '',
+                'title' => '',
+                'icon' => '',
+                'column' => 8
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
+            'name' => 'bahooosh::thumbnails.package-thumbnail',
+            'title' => 'باکس پکیج/نمونه کارها',
+            'data' => [
+                'title' => '',
+                'subtitle_type' => 1,
+                'subtitle' => 0,
+                'subtitle_url' => '',
+                'description' => '',
+                'image_url' => '',
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
+            'name' => 'bahooosh::components.support.service-image-section',
+            'title' => 'سرویس ها + عکس',
+            'data' => [
+                'class' => '',
+                'title' => '',
+                'icon' => '',
+                'image_url' => '',
+                'reverse' => false,
+                'column' => 6
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
             'name' => 'bahooosh::components.customer-comment.comment-section',
             'title' => 'نظر مشتریان',
-            'data' => [],
+            'data' => [
+                'title' => '',
+                'comments' => [],
+            ],
+            'is_livewire' => true,
+            'category' => 'customer_comment'
+        ),
+        array(
+            'name' => 'bahooosh::components.customer-comment.comment2-section',
+            'title' => 'نظر مشتریان 2',
+            'data' => [
+                'title' => '',
+                'comments' => [],
+            ],
             'is_livewire' => true,
             'category' => 'customer_comment'
         ),

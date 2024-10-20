@@ -1,9 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use Harvest\Bahooosh\Facades\Bahooosh;
 
-//Route::view('/', 'bahooosh::hello');
-//Route::view('/', 'bahooosh::index');
-\Harvest\Bahooosh\Facades\Bahooosh::routes(config('cms.prefix_route'));
+
+Bahooosh::routes(config('cms.prefix_route'));
+Route::view('/', 'bahooosh::index');
 Route::view('/features', 'bahooosh::features');
 Route::view('/prices', 'bahooosh::prices');
 Route::view('/portfolio', 'bahooosh::portfolio');

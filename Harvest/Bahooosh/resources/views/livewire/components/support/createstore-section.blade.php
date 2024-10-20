@@ -26,7 +26,7 @@
                                 <div class="item-store flex flex-col items-center">
                                     <div class="p-number mb-3 w-full flex items-center justify-between">
                                         <strong class="bolX mr-3 text-5xl mt-4">{{ $index + 1 }}</strong>
-                                        <img class="ml-3" width="40" src="{{ $item['image_url'] }}" alt="">
+                                        <img class="ml-3" width="40" src="{{ asset($item['image_url']) }}" alt="">
                                     </div>
                                     <h3 class="text-base fs-16 bolX">{{ $item['title'] }}</h3>
                                     <span class="text-gray text-small RaviBold text-center mt-3">{{ $item['description'] }}</span>
@@ -44,7 +44,7 @@
                                 <div class="item-store {{ $index != 0 && $index !== 3 ? 'mt-7' : '' }} flex flex-col items-center">
                                     <div class="p-number mb-3 w-full flex items-center justify-between">
                                         <strong class="bolX mr-3 text-5xl mt-4">{{ $index + 1 }}</strong>
-                                        <img class="ml-3" width="40" src="{{ $item['image_url'] }}" alt="">
+                                        <img class="ml-3" width="40" src="{{ asset($item['image_url']) }}" alt="">
                                     </div>
                                     <h3 class="text-base fs-16 bolX">{{ $item['title'] }}</h3>
                                     <span class="text-gray text-small RaviBold text-center mt-3">{{ $item['description'] }}</span>

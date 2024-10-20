@@ -1,7 +1,7 @@
 <div class="thumbnail-blog flex justify-between items-center bg-white w-full">
     @php($thumb = $post->files()->first())
     <div class="img-blog">
-        <img src="{{ $thumb?->path ?? getValue('post_thumbnail_default') }}" alt="{{ $thumb?->alt ?? $post->title }}">
+        <img src="{{ asset($thumb?->path ?? getValue('post_thumbnail_default')) }}" alt="{{ $thumb?->alt ?? $post->title }}">
     </div>
     <div class="detail-blog flex flex-col items-start">
         <div class="date w-full gap-2 flex justify-start items-center">

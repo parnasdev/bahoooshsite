@@ -16,7 +16,12 @@ class IndexPage extends Component
 
     public function pageRoute(): string
     {
-        return '/';
+        $prefix = config('cms.prefix_route');
+        $slug = request()->path();
+        if (!empty($prefix)) {
+            $slug = str_replace([$prefix , '/'], '', $slug);
+        }
+        return empty($slug) ? '/' : $slug;
     }
 
     public function render()

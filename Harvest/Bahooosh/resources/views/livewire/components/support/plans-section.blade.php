@@ -15,7 +15,7 @@
                         <div
                             class="thumbnail-plan {{ $plan['is_special'] ? 'thumbnail-plan-special' : '' }} bg-white flex flex-col items-center justify-start relative">
                             <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                <img class="relative" width="40" src="{{ $plan['image_url'] }}" alt="">
+                                <img class="relative" width="40" src="{{ asset($plan['image_url'] )}}" alt="">
                             </div>
                             <div class="detail-top mt-12 px-4 flex justify-between items-center w-full">
                                 <div class="text flex flex-col">
@@ -75,7 +75,7 @@
                         <div x-data="{showMore:false}"
                              class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                             <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                <img class="relative" width="40" src="{{ $plan['image_url'] }}" alt="">
+                                <img class="relative" width="40" src="{{ asset($plan['image_url']) }}" alt="">
                             </div>
                             <div class="detail-top mt-12 px-4 flex justify-center flex-col items-center w-full">
                                 <div class="text flex flex-col items-center">

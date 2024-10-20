@@ -13,7 +13,7 @@
                     <div class="show-desktop w-full">
                         <div class="top-footer flex items-center justify-between w-full">
                             <div class="box-contact flex flex-col items-center justify-center bg-white">
-                                <img width="200" src="{{ $block->data['footer_logo'] }}" alt="">
+                                <img width="200" src="{{ asset($block->data['footer_logo']) }}" alt="">
                                 <div class="list gap-4 mt-8 w-full flex flex-col px-7">
                                     <div class="item w-full gap-2 flex justify-start items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -80,7 +80,7 @@
                                         <div class="socials gap-3 mt-3 w-full flex justify-start items-center">
                                             @foreach($block->data['social_links'] as $socialLink)
                                                 <div class="bg-white {{ $socialLink['show_username'] ? 'instagram relative' : 'aparat' }} flex items-center justify-center">
-                                                    <img width="20" class="{{ $socialLink['show_username'] ? 'absolute right-2' : '' }}" src="{{$socialLink['image_url']}}" alt="">
+                                                    <img width="20" class="{{ $socialLink['show_username'] ? 'absolute right-2' : '' }}" src="{{asset($socialLink['image_url'])}}" alt="">
                                                     @if($socialLink['show_username'])
                                                         <span class="text-small">{{ $socialLink['username'] }}</span>
                                                     @endif
@@ -112,7 +112,7 @@
                     <div class="show-mobile">
                         <div class="top-footer flex flex-col items-center justify-between w-full">
                             <div class="box-contact w-full flex flex-col items-center justify-center bg-white">
-                                <img width="200" src="{{ $block->data['footer_logo'] }}" alt="">
+                                <img width="200" src="{{ asset($block->data['footer_logo']) }}" alt="">
                                 <div class="list gap-4 mt-8 w-full flex flex-col px-7">
                                     <div class="item w-full gap-2 flex justify-start items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -188,7 +188,7 @@
                                             <div class="socials gap-2 w-1/2 mt-3 flex flex-col">
                                                 @foreach($block->data['social_links'] as $socialLink)
                                                     <div class="telegram bg-white relative flex items-center justify-center">
-                                                        <img width="20" class="absolute right-2" src="{{$socialLink['image_url']}}" alt="">
+                                                        <img width="20" class="absolute right-2" src="{{asset($socialLink['image_url'])}}" alt="">
                                                         <span class="text-small">{{ $socialLink['username'] }}</span>
                                                     </div>
                                                 @endforeach
@@ -211,8 +211,8 @@
                     </div>
                     <div class="bottom-footer mt-7 flex items-center justify-between w-full">
                         <div class="start flex pt-4 flex-col items-start">
-                            <span class="text-base text-small bolX">© کپی رایت ۱۴۰۱-۱۴۰۳.</span>
-                            <span style="color: #272E37" class="text-small">تمامی حقوق مادی و معنوی این وبسایت متعلق به آژانس خلاقیت پارناس می باشد و هرگونه کپی برداری پیگرد قانونی دارد.</span>
+                            <span class="text-base text-small bolX">{{ $block->data['copyright_year'] }}</span>
+                            <span style="color: #272E37" class="text-small">{{ $block->data['copyright_text'] }}</span>
                         </div>
                         <a class="pt-4" href="https://">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 57.249 48.922">

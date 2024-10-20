@@ -65,6 +65,7 @@
                                 <div class="rx-border-rectangle-after"></div>
                             </div>
                         </div>
+                        <x-inputs.panel.text label="کلاس صفحه" wire:model="post.options.class" class="justify-content-end"/>
                         <x-inputs.panel.checkbox wire:model="post.pin" class="flex-50 justify-content-start pr-10"
                                                  label=" نمایش در بالای لیست"/>
                         <x-inputs.panel.select class="flex-50 mb-10"
@@ -180,7 +181,7 @@
                                     </button>
                                 </div>
                             </div>
-                            @if(($block['component_name'] == $theme.'::components.general.column-section' || $block['component_name'] == $theme.'::components.general.section') && !empty($block['data']['column'] ?? 0))
+                            @if(!empty($block['data']['column'] ?? 0))
                                 <div class="d-flex flex-wrap">
                                     @if($block['data']['column'] - count($block['children']) > 0)
                                         @foreach(range(1 , $block['data']['column'] - count($block['children'])) as $column)
@@ -248,7 +249,7 @@
 
 
                                         </div>
-                                            @if(($child['component_name'] == $theme.'::components.general.column-section' || $child['component_name'] == $theme.'::components.general.section') && !empty($child['data']['column'] ?? 0))
+                                            @if(!empty($child['data']['column'] ?? 0))
                                                 <div class="d-flex flex-100 flex-wrap">
                                                     @if($child['data']['column'] - count($child['children']) > 0)
                                                         @foreach(range(1 , $child['data']['column'] - count($child['children'])) as $column)

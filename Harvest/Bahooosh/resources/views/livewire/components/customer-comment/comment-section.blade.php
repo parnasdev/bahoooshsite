@@ -1,6 +1,7 @@
 <div>
     @if(!$is_edit)
-        <div class="p-s3 w-full"  x-data="{
+        <div class="p-s3 w-full"
+             x-data="{
             init() {
 
                 new Swiper($refs.swiper, {
@@ -61,7 +62,7 @@
                                 <div class="box-store flex flex-col items-center w-full">
                                     <div class="logo-store flex items-center justify-content-center p-2">
                                         <div class="img p-2 bg-white flex items-center justify-content-center">
-                                            <img src="{{ $comment['image_url'] }}" alt="">
+                                            <img src="{{ asset($comment['image_url']) }}" alt="">
                                         </div>
                                     </div>
                                     <div class="row-title relative bottom-6 w-full flex justify-between px-5">

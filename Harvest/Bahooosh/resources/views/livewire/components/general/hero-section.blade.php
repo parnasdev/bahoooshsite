@@ -33,7 +33,7 @@
 
             <div class="video-main  flex sm:w-full justify-end w-1/2">
                 <div class="box-video flex justify-center items-center pos-relative">
-                    <img class="img-gif" src="{{ $block->data['video_url'] }}" />
+                    <img class="img-gif" src="{{ asset($block->data['video_url']) }}" />
 {{--                    <button class="play-video pos-absolute cursor-pointer">--}}
 {{--                        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90"--}}
 {{--                             viewBox="0 0 123.246 123.246">--}}
