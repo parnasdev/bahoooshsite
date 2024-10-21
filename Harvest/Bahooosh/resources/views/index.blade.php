@@ -52,10 +52,32 @@
         </header>
 
         <div class="w-full show-mobile mt-3 px-4">
-            <header class="header flex justify-center">
+            <header x-data="{openMenu: false}" class="header flex justify-center">
+                <div style="display: none" x-show="openMenu" x-collapse.opacity.duration.700ms class="show-menu-mobile w-full p-3 h-[300px] rounded-[30px] absolute bg-white z-20">
+                    <div class="row-close-btn flex justify-start">
+                        <button @click="openMenu=false">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="28" height="28" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                    <path d="M 28.5 65.5 c -1.024 0 -2.047 -0.391 -2.829 -1.172 c -1.562 -1.562 -1.562 -4.095 0 -5.656 l 33 -33 c 1.561 -1.562 4.096 -1.562 5.656 0 c 1.563 1.563 1.563 4.095 0 5.657 l -33 33 C 30.547 65.109 29.524 65.5 28.5 65.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(236,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 61.5 65.5 c -1.023 0 -2.048 -0.391 -2.828 -1.172 l -33 -33 c -1.562 -1.563 -1.562 -4.095 0 -5.657 c 1.563 -1.562 4.095 -1.562 5.657 0 l 33 33 c 1.563 1.562 1.563 4.095 0 5.656 C 63.548 65.109 62.523 65.5 61.5 65.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(236,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 C 82 24.598 65.402 8 45 8 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(236,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+</svg>
+                        </button>
+                    </div>
+                    <div class="row-menu mt-[12px] w-full px-[12px] flex flex-col items-center gap-3">
+                        <a class="w-full text-[13px] h-[40px] flex justify-center items-center bolX rounded-[8px] text-gray bg-gray-200" href="">صفحه اصلی</a>
+                        <a class="w-full text-[13px] h-[40px] flex justify-center items-center bolX rounded-[8px] text-gray bg-gray-200" href="">قیمت‌ها</a>
+                        <a class="w-full text-[13px] h-[40px] flex justify-center items-center bolX rounded-[8px] text-gray bg-gray-200" href="">ویژگی‌ها</a>
+                        <a class="w-full text-[13px] h-[40px] flex justify-center items-center bolX rounded-[8px] text-gray bg-gray-200" href="">نمونه کار‌ها</a>
+                    </div>
+                </div>
                 <div class="p-header-mobi w-full px-4 flex justify-between items-center">
-                    <div class="start flex gap-3 items-center">
-                        <button class="open-menu">
+                    <div  class="start flex gap-3 items-center">
+                        <button @click="openMenu=true" class="open-menu">
                             <svg id="Component_1_3" data-name="Component 1 – 3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                 <rect id="Rectangle_1918" data-name="Rectangle 1918" width="30" height="30" rx="15"/>
                                 <g id="fi-rr-menu-burger" transform="translate(8.282 10.468)">
@@ -64,7 +86,6 @@
                                     <rect id="Rectangle_1160" data-name="Rectangle 1160" width="14.196" height="1.374" rx="0.687" transform="translate(-0.38 7.968)" fill="#fff"/>
                                 </g>
                             </svg>
-
                         </button>
                         <a href="" class="logo-website  flex align-center">
                             <img class="object-contain" width="100" src="img/view/png/New%20Logo%20-%20Font.png" alt="">

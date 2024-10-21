@@ -145,7 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row-detail-blog gap-10 w-full my-12 max-[700px]:flex-col flex justify-between items-start relative">
+                <div
+                    class="row-detail-blog gap-10 w-full my-12 max-[700px]:flex-col flex justify-between items-start relative">
                     <div class="sticky-row max-[700px]:w-full max-[700px]:relative w-3/12 sticky top-2">
                         <img class="img-blog-info w-full h-72 rounded-3xl " src="/img/view/png/kids-info-blog.png"
                              alt="">
@@ -190,7 +191,33 @@
                                 برای
                                 دانشجویانی است که با این چالش‌ها روبرو هستند و می‌خواهند در مورد نحوه انتخاب پذیرش مناسب
                                 خودشان در فرانسه اطلاعات کسب کنند.</p>
-
+                            <div class="w-full my-[2rem] flex justify-start">
+                                <div
+                                    class="box-list shadow-md  flex flex-col items-start p-3 rounded-[30px] h-[250px] max-[600px]:h-auto max-[600px]:w-full w-[60%]">
+                                    <div class="flex w-full border-box-list-title justify-start items-center gap-2">
+                                        <div class="circle w-[7px] h-[7px] bg-base rounded-[50%]"></div>
+                                        <h4 class="">فهرست عناوین</h4>
+                                    </div>
+                                    <ol class="pb-[1rem] pt-[8px]">
+                                        <li class="flex mt-[12px] justify-start medium text-[13px] max-[600px]:text-[12px] items-center gap-2">
+                                            <strong class="text-[17px] max-[600px]:text-[15px] bolX text-base">1.</strong>
+                                            پذیرش در فرانسه
+                                        </li>
+                                        <li class="flex mt-[12px] justify-start medium text-[13px] max-[600px]:text-[12px] items-center gap-2">
+                                            <strong class="text-[17px] max-[600px]:text-[15px] bolX text-base">2.</strong>
+                                            نحوه انتخاب بین ورودی ژانویه و سپتامبر برای تحصیل در فرانسه
+                                        </li>
+                                        <li class="flex mt-[12px] justify-start medium text-[13px] max-[600px]:text-[12px] items-center gap-2">
+                                            <strong class="text-[17px] max-[600px]:text-[15px] bolX text-base">3.</strong>
+                                            کدام پذیرش برای دانشجویان بین المللی در فرانسه بهتر است؟
+                                        </li>
+                                        <li class="flex mt-[12px] justify-start medium text-[13px] max-[600px]:text-[12px] items-center gap-2">
+                                            <strong class="text-[17px] max-[600px]:text-[15px] bolX text-base">4.</strong>
+                                            نتیجه گیری ورودی پاییز در مقابل بهار در فرانسه
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                             <h3>پذیرش در فرانسه</h3>
                             <span>پذیرش ها به این معنی هستند که ترم کلاس ها در آن زمان خاص از سال در دانشگاه ها شروع می شود. به طور عمده، پذیرش ژانویه و سپتامبر دانشگاه های فرانسه برای دانشجویانی هستند که از کشورهای دیگر می آیند. هر دو ورودی برای دانشجویان و دانشگاه های فرانسه به یک اندازه مهم هستند.</span>
                             <p>فرانسه یکی از کشورهای پرتقاضا در میان دانشجویان بین المللی است. این کشور فرصت های عالی
@@ -232,7 +259,8 @@
                                 <a class="text-light bolX text-small item" href="">برچسب 4 ،</a>
                             </div>
                         </div>
-                        <div class="row-users mt-4 relative max-[700px]:items-start w-full flex justify-between items-center">
+                        <div
+                            class="row-users mt-4 relative max-[700px]:items-start w-full flex justify-between items-center">
                             <div class="start flex flex-col max-[700px]:w-full items-start w-2/3">
                                 <h4 class="bolX text-base text-md">نظرات کاربران</h4>
                                 <span class="text-gray-s text-small medium mt-4">دقت کنید</span>
@@ -252,8 +280,10 @@
                                 </div>
 
                             </div>
-                            <div class="end flex max-[600px]:absolute max-[600px]:left-0 max-[600px]:bottom-20 flex-col items-end">
-                                <div class="box-rate max-[600px]:bg-transparent  rounded-md flex mt-4 flex-col items-center justify-center">
+                            <div
+                                class="end flex max-[600px]:absolute max-[600px]:left-0 max-[600px]:bottom-20 flex-col items-end">
+                                <div
+                                    class="box-rate max-[600px]:bg-transparent  rounded-md flex mt-4 flex-col items-center justify-center">
                                     <strong class="text-3xl bolX">4.5</strong>
                                     <div class="p-star mt-4 flex justify-center w-full gap-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -341,7 +371,8 @@
                                     </div>
                                 </div>
                                 <div class="bottom w-full mt-5">
-                                    <p class="text-small text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم
+                                    <p class="text-small text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده ازلورم
                                         ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم ایپسوم
                                         متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم ایپسوم متن
                                         ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</p>
@@ -443,7 +474,8 @@
                                     </div>
                                 </div>
                                 <div class="bottom w-full mt-3">
-                                    <p class="text-small text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم
+                                    <p class="text-small text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                                        و با استفاده ازلورم
                                         ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم ایپسوم
                                         متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده ازلورم ایپسوم متن
                                         ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
