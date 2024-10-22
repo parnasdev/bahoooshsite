@@ -1,0 +1,7 @@
+{
+  "name": "formbuilder",
+  "type": "package",
+  "service": "Harvest\\Formbuilder\\Providers\\FormbuilderServiceProvider",
+  "commands": [],
+  "disabled": false
+}

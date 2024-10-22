@@ -23,7 +23,7 @@ class Bahooosh extends Facade
     {
         $pages = Page::query()->latest()->where('status' , PostStatus::PUBLISHED)->get();
        //TODO: Dynamic This
-      Route::prefix($prefix)->group(function () use ($pages) {
+      Route::prefix($prefix)->middleware('web')->group(function () use ($pages) {
           foreach ($pages as $page) {
               Route::get($page->slug, Pages\IndexPage::class);
           }

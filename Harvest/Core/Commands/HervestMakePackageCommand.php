@@ -36,7 +36,7 @@ class HervestMakePackageCommand extends Command
             'E.g Cart',
             required: true,
             validate: [
-                'required' , 'string' , 'max:10'
+                'required' , 'string' , 'max:20'
             ]
         )));
 

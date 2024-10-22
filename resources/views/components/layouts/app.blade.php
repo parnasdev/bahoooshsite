@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <meta name="csrf_token" content="{{ csrf_token() }}"/>
     {!! \Artesaos\SEOTools\Facades\SEOTools::generate() !!}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

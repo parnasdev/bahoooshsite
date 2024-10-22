@@ -9,10 +9,12 @@
                 @if(!empty($block->data['btn_text'] ?? ''))
                     @if(($block->data['btn_type'] ?? 1) == 1)
                         <x-buttons.home.button href="{{ $block->data['btn_link'] ?? '' }}" class="bg-black text-white hover:bg-white hover:text-black border-2 border-black max-[600px]:w-48 mt-2 w-64 gap-5">
+                            {!! $block->data['btn_icon'] ?? '' !!}
                             {{ $block->data['btn_text'] ?? '' }}
                         </x-buttons.home.button>
                     @else
                         <x-buttons.home.button-o href="{{ $block->data['btn_link'] ?? '' }}" class="bg-white text-black hover:bg-black hover:text-white border-2 border-black mt-2 w-64 gap-5">
+                            {!! $block->data['btn_icon'] ?? '' !!}
                             {{ $block->data['btn_text'] ?? '' }}
                         </x-buttons.home.button-o>
                     @endif
