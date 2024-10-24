@@ -127,7 +127,8 @@
                         <form class="form py-5 flex flex-wrap w-full gap-3" action="">
                             <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
                                  class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
-                                <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })" :class="inp === true ? 'labelUp':'labeDown bolX'"
+                                <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
+                                       :class="inp === true ? 'labelUp':'labeDown bolX'"
                                        class="text-light p-x-2 text-normal " for="">نام و نام خانوادگی *</label>
                                 <input x-ref="input" class="mt-3 text-normal" style="display: none"
                                        @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
@@ -136,7 +137,8 @@
                             <div class=" w-full grid grid-cols-2 gap-2">
                                 <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
                                      class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
-                                    <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })" :class="inp === true ? 'labelUp':'labeDown bolX'"
+                                    <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
+                                           :class="inp === true ? 'labelUp':'labeDown bolX'"
                                            class="text-light p-x-2 text-normal " for="">شماره همراه *</label>
                                     <input x-ref="input" class="mt-3 text-normal" style="display: none"
                                            @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
@@ -144,7 +146,8 @@
                                 </div>
                                 <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
                                      class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
-                                    <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })" :class="inp === true ? 'labelUp':'labeDown bolX'"
+                                    <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
+                                           :class="inp === true ? 'labelUp':'labeDown bolX'"
                                            class="text-light p-x-2 text-normal " for="">ایمیل (اختیاری)</label>
                                     <input x-ref="input" class="mt-3 text-normal" style="display: none"
                                            @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
@@ -152,6 +155,127 @@
                                 </div>
 
                             </div>
+                            {{--singleSelect--}}
+                            <div
+                                class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
+                                x-data="{select:false , text: 'انتخاب کنید' }">
+                                <div @click="select=true"
+                                     class="head w-full h-[50px] flex justify-between items-center">
+                                    <h4 x-text="text" class="text-light bolX text-[13px]"></h4>
+                                    <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
+                                         xmlns="http://www.w3.org/2000/svg" width="13" height="7"
+                                         viewBox="0 0 16.854 8.635">
+                                        <path id="fi-rr-angle-small-right"
+                                              d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
+                                              transform="translate(21.853 -9.104) rotate(90)"/>
+                                    </svg>
+                                </div>
+                                <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
+                                     @click.outside="select=false"
+                                     x-collapse.duration.500ms x-show="select">
+                                    <div
+                                        class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
+                                        <template x-for="item in 4">
+                                            <div @click="select=false"
+                                                 class="item w-full px-3 h-[60px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                <h4 x-model="text" class="text-[13px] text-gray medium  m-0 p-0">آیتم
+                                                    1</h4>
+                                                <img class="w-[45px] h-[45px] rounded-[50%]"
+                                                     src="/img/view/png/square-aprat.png" alt="">
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                            {{--singleSelect--}}
+
+                            {{--multiSelect--}}
+                            <div
+                                class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
+                                x-data="{multiSelect:false}">
+                                <div @click="multiSelect=!multiSelect"
+                                     class="head w-full h-[50px] flex justify-between items-center">
+                                    <h4 class="text-light bolX text-[13px]">چند تا انتخاب کنید</h4>
+                                    <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
+                                         xmlns="http://www.w3.org/2000/svg" width="13" height="7"
+                                         viewBox="0 0 16.854 8.635">
+                                        <path id="fi-rr-angle-small-right"
+                                              d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
+                                              transform="translate(21.853 -9.104) rotate(90)"/>
+                                    </svg>
+                                </div>
+                                <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
+                                     @click.outside="multiSelect=false"
+                                     x-collapse.duration.500ms x-show="multiSelect">
+                                    <div
+                                        class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
+                                        <div
+                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <input id="default-checkbox" type="checkbox" value=""
+                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox"
+                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                    انتخابی 1</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <input id="default-checkbox" type="checkbox" value=""
+                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox"
+                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                    انتخابی 1</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <input id="default-checkbox" type="checkbox" value=""
+                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox"
+                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                    انتخابی 1</label>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                            <div class="flex items-center">
+                                                <input id="default-checkbox" type="checkbox" value=""
+                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox"
+                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                    انتخابی 1</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            {{--multiSelect--}}
+
+                            {{--uploadFile--}}
+                            <button class="uploadFile w-full h-[150px] flex items-center gap-4 justify-center my-[1rem] cursor-pointer rounded-[10px]">
+                                <h2 class="text-light bolX max-[600px]:text-[16px] text-[18px]">بارگزاری فایل</h2>
+                                <svg class="w-[26px] h-[26px]  max-[600px]:w-[20px] max-[600px]:h-[20px]" fill="#d4d4d4"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     viewBox="0 0 490.955 490.955" xml:space="preserve">
+<path id="XMLID_448_" d="M445.767,308.42l-53.374-76.49v-20.656v-11.366V97.241c0-6.669-2.604-12.94-7.318-17.645L312.787,7.301
+	C308.073,2.588,301.796,0,295.149,0H77.597C54.161,0,35.103,19.066,35.103,42.494V425.68c0,23.427,19.059,42.494,42.494,42.494
+	h159.307h39.714c1.902,2.54,3.915,5,6.232,7.205c10.033,9.593,23.547,15.576,38.501,15.576c26.935,0-1.247,0,34.363,0
+	c14.936,0,28.483-5.982,38.517-15.576c11.693-11.159,17.348-25.825,17.348-40.29v-40.06c16.216-3.418,30.114-13.866,37.91-28.811
+	C459.151,347.704,457.731,325.554,445.767,308.42z M170.095,414.872H87.422V53.302h175.681v46.752
+	c0,16.655,13.547,30.209,30.209,30.209h46.76v66.377h-0.255v0.039c-17.685-0.415-35.529,7.285-46.934,23.46l-61.586,88.28
+	c-11.965,17.134-13.387,39.284-3.722,57.799c7.795,14.945,21.692,25.393,37.91,28.811v19.842h-10.29H170.095z M410.316,345.771
+	c-2.03,3.866-5.99,6.271-10.337,6.271h-0.016h-32.575v83.048c0,6.437-5.239,11.662-11.659,11.662h-0.017H321.35h-0.017
+	c-6.423,0-11.662-5.225-11.662-11.662v-83.048h-32.574h-0.016c-4.346,0-8.308-2.405-10.336-6.271
+	c-2.012-3.866-1.725-8.49,0.783-12.07l61.424-88.064c2.189-3.123,5.769-4.984,9.57-4.984h0.017c3.802,0,7.38,1.861,9.568,4.984
+	l61.427,88.064C412.04,337.28,412.328,341.905,410.316,345.771z"/>
+</svg>
+                            </button>
+                            {{--uploadFile--}}
+
                             <div class="textarea w-full">
                                 <textarea class="w-full" placeholder="متن پیام" name="" id="" cols="30"
                                           rows="10"></textarea>

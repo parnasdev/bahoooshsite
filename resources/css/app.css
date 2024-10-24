@@ -63,6 +63,18 @@ body {
     margin-inline: auto;
 }
 
+@media only screen and (min-width: 1300px) and (max-width: 1450px) {
+    .prs-container {
+        max-width: 1200px !important;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+    .prs-container {
+        max-width: 1050px !important;
+    }
+}
+
 @font-face {
     font-family: Ravi;
     font-style: normal;
@@ -1235,12 +1247,15 @@ body {
 .pricePage, .subscriptions {
     .box-subscriptions-price {
         border: 2px solid #FCA700;
+
         .active-border {
             border: 1px solid var(--gray-s) !important;
         }
+
         .deactive-border {
             border: 1px solid var(--light) !important;
         }
+
         .inp-full {
             border: #80828580;
             height: 55px;
@@ -1279,8 +1294,11 @@ body {
                 top: 7px !important;
             }
         }
-        .before-price{
-            &:after{
+
+
+
+        .before-price {
+            &:after {
                 content: '';
                 position: absolute;
                 rotate: -3deg;
@@ -1661,6 +1679,9 @@ body {
 
 /*aboutPage*/
 .aboutPage {
+    .uploadFile{
+        border: 2px dashed var(--base-color);
+    }
     .border-row-one {
         .img-left {
             bottom: 0;
@@ -1719,7 +1740,12 @@ body {
     .deactive-border {
         border: 1px solid var(--light) !important;
     }
-
+    .selectBase {
+        border: #80828580;
+        border-radius: 10px;
+        position: relative;
+        border: 1px solid var(--light);
+    }
     .inp-full {
         border: #80828580;
         height: 50px;
@@ -1998,7 +2024,8 @@ body {
             font-size: 20px;
         }
     }
-    .portfolioPage, .pricePage, .featuresPage , .subscriptions {
+
+    .portfolioPage, .pricePage, .featuresPage, .subscriptions {
         .list-building {
             overflow: unset !important;
             flex-direction: column;
@@ -2231,6 +2258,7 @@ body {
 
 
     }
+
     .box-building {
         width: 100% !important;
         display: flex;
