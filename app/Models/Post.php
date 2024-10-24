@@ -64,11 +64,6 @@ class Post extends Model implements CanVisit
         return '#';
     }
 
-    public function scopeJustPostType($query , $type)
-    {
-        return $query->where('type' ,$type);
-    }
-
     public function scopeIsPublish($query)
     {
         return $query->where('status' , PostStatus::PUBLISHED);
@@ -98,7 +93,7 @@ class Post extends Model implements CanVisit
         string  $slug
     ): Builder
     {
-        return $query->where('type', $model->type ?? $config['type']);
+        return $query->where('type', PostType::POST->value);
     }
 
     /**
@@ -114,6 +109,7 @@ class Post extends Model implements CanVisit
             'slug' => $this->slug,
             'description' => $this->description,
             'body'=> $this->body,
+            'type' => 'post'
         ];
     }
 

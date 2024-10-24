@@ -115,6 +115,19 @@ return [
             'category' => 'support'
         ),
         array(
+            'name' => 'bahooosh::components.support.service-image2-section',
+            'title' => 'سرویس ها + عکس 2',
+            'data' => [
+                'class' => '',
+                'title' => '',
+                'description' => '',
+                'image_url' => '',
+                'column' => 2
+            ],
+            'is_livewire' => true,
+            'category' => 'support'
+        ),
+        array(
             'name' => 'bahooosh::components.customer-comment.comment-section',
             'title' => 'نظر مشتریان',
             'data' => [
@@ -190,6 +203,29 @@ return [
             'data' => [],
             'is_livewire' => true,
             'category' => 'blog'
+        ),
+        array(
+            'name' => 'bahooosh::components.blog.blog-filter',
+            'title' => 'لیست وبلاگ ها(فیلتر)',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'blog'
+        ),
+        array(
+            'name' => 'bahooosh::components.banner.banner-slider',
+            'title' => 'اسلایدر بنر',
+            'data' => [
+                'banners' => []
+            ],
+            'is_livewire' => true,
+            'category' => 'banner'
+        ),
+        array(
+            'name' => 'bahooosh::components.general.single-image',
+            'title' => 'عکس تکی',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
         ),
     ]
 ];

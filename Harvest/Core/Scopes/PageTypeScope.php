@@ -14,6 +14,6 @@ class PageTypeScope implements Scope
      */
     public function apply(Builder $builder, Model $model): void
     {
-        $builder->where('type' , PostType::PAGE);
+        $builder->where('posts.type' , PostType::PAGE);
     }
 }

@@ -2,7 +2,7 @@
     @if(!$is_edit)
         <div class="show-desktop box-building {{ $block->data['class_desktop'] ?? '' }} bg-white w-full">
             <div class="floating-box flex flex-col items-center w-full ">
-                <img class="img" width="80" src="{{ asset($block->data['image_url'] ?? '') }}" alt="">
+                <img class="img" style="scale: 0.9" width="80" src="{{ asset($block->data['image_url'] ?? '') }}" alt="">
                 <h3 class="text-base bolX">{{ $block->data['title']  ?? '' }}</h3>
                 <span class="text-small text-gray w-10/12 mt-2 text-center RaviBold">
                     {{ $block->data['description']  ?? '' }}

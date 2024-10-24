@@ -14,6 +14,7 @@
                 <option value="2">تو خالی</option>
             </x-inputs.panel.select>
             <x-inputs.panel.text class="justify-content-end" label="متن دکمه" wire:model="blockForm.data.btn_text" />
+            <x-inputs.panel.text class="justify-content-end" label="آیکون دکمه" wire:model="blockForm.data.btn_icon" />
             <x-inputs.panel.text class="justify-content-end" label="لینک دکمه" wire:model="blockForm.data.btn_link" />
             <x-inputs.panel.swich rightLabel="نمایش خط پایین" wire:model="blockForm.data.show_border" />
             <x-inputs.panel.single-file-picker wire:model="blockForm.data.image_url" label="آپلود عکس" />

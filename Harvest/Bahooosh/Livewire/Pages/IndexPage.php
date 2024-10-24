@@ -9,6 +9,7 @@ use App\Models\Page;
 use Harvest\Bahooosh\Traits\LoadPage;
 use Illuminate\Support\Collection;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class IndexPage extends Component
 {
