@@ -2,8 +2,11 @@
 
 namespace Harvest\Bahooosh\Livewire\Components\Layouts;
 
+use App\Enums\LinkStatus;
+use App\Enums\LinkType;
 use App\Livewire\ComponentBuilder;
 use App\Models\Block;
+use App\Models\Link;
 use Livewire\Attributes\On;
 
 class HeaderSection extends ComponentBuilder
@@ -25,7 +28,15 @@ class HeaderSection extends ComponentBuilder
 
     public function render()
     {
-        return view('bahooosh::livewire.components.layouts.header-section');
+        $links_desktop = Link::query()->whereNull('parent_id')->where('type' , LinkType::HEADER_DESKTOP)->orderBy('order_item')
+            ->where('status' , LinkStatus::SHOW)
+            ->with('children' , fn($q) => $q->orderBy('order_item')->where('status' , LinkStatus::SHOW))->get();
+
+        $links_mobile = Link::query()->whereNull('parent_id')->where('type' , LinkType::HEADER_MOBILE)->orderBy('order_item')
+            ->where('status' , LinkStatus::SHOW)
+            ->with('children' , fn($q) => $q->orderBy('order_item')->where('status' , LinkStatus::SHOW))->get();
+
+        return view('bahooosh::livewire.components.layouts.header-section' , compact('links_mobile' , 'links_desktop'));
     }
 
     #[On('updateBlock')]

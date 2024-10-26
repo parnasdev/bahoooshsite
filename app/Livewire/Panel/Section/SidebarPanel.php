@@ -16,6 +16,7 @@ class SidebarPanel extends Component
             ->addLink('منو سایت', '', route('panel.links.index'), 'panel.links.*', 'links.read')
             ->addLink('سئو', '', route('panel.settings.seo'), 'panel.settings.seo', 'settings.read')
             ->addLink('فایل ها', '', route('panel.fileManger'), 'panel.fileManger', 'files')
+            ->addLink('فرم ها', '', route('panel.forms.index'), 'panel.forms.*', 'forms.read')
             ->addLink('کاربر ها', '', route('panel.users.index'), 'panel.users.*', 'users.read')
             ->addTitle('تنظیمات')
             ->addLink('تنظیمات اصلی', '', route('panel.settings.index'), 'panel.settings.index', 'settings.read')

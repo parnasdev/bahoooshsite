@@ -25,7 +25,9 @@ class PageForm extends Form
     public $status = PostStatus::PUBLISHED->value;
     public $options = [
         'page_type' => PageType::BUILDER_MODE->value,
-        'class' => ''
+        'class' => '',
+        'show_header' => true,
+        'show_footer' => true,
     ];
     public $user_id;
     public $type;
@@ -74,6 +76,14 @@ class PageForm extends Form
         $this->type = $this->post->type;
 
         $this->options = $this->post->options;
+
+        if (!isset($this->options['show_header'])) {
+            $this->options['show_header'] = true;
+        }
+
+        if (!isset($this->options['show_footer'])) {
+            $this->options['show_footer'] = true;
+        }
 
         $this->blocks = $this->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
 

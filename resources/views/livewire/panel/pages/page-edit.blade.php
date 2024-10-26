@@ -68,6 +68,10 @@
                         <x-inputs.panel.text label="کلاس صفحه" wire:model="post.options.class" class="justify-content-end"/>
                         <x-inputs.panel.checkbox wire:model="post.pin" class="flex-50 justify-content-start pr-10"
                                                  label=" نمایش در بالای لیست"/>
+                        <x-inputs.panel.checkbox wire:model="post.options.show_header" class="flex-50 justify-content-start pr-10"
+                                                 label=" نمایش هدر"/>
+                        <x-inputs.panel.checkbox wire:model="post.options.show_footer" class="flex-50 justify-content-start pr-10"
+                                                 label=" نمایش فوتر"/>
                         <x-inputs.panel.select class="flex-50 mb-10"
                                                label="نوع صفحه"
                                                :options="$pageTypes"

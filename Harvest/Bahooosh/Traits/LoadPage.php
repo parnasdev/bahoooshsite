@@ -16,8 +16,8 @@ trait LoadPage
     {
         $this->blocks = collect();
         $this->page = Page::findBySlugOrFail($this->pageRoute());
-        $headerBlock =  Block::query()->find(config('cms.header_id'));
-        $footerBlock =  Block::query()->find(config('cms.footer_id'));
+        $headerBlock = ($this->page->options['show_header'] ?? true) ?  Block::query()->find(config('cms.header_id')) : null;
+        $footerBlock = ($this->page->options['show_footer'] ?? true) ? Block::query()->find(config('cms.footer_id')) : null;
         $this->blocks = $this->page->blocks()->whereNull('parent_id')->get();
         if ($this->page->options['page_type'] == PageType::TEXT_MODE->value) {
             $staticBlock = $this->blocks->where('category' , BlockCategory::STATIC)->first();
