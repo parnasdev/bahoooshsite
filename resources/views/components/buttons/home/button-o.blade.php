@@ -1,5 +1,5 @@
 @if($attributes->has('href'))
-    <a {{ $attributes->merge(['class' => 'btn-base-two']) }} target="{{ $traget ?? '' }}">
+    <a {{ $attributes->merge(['class' => 'btn-base-two']) }}>
         {{ $slot }}
     </a>
 @else

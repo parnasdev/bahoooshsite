@@ -2,6 +2,8 @@
   "name": "formbuilder",
   "type": "package",
   "service": "Harvest\\Formbuilder\\Providers\\FormbuilderServiceProvider",
-  "commands": [],
+  "commands": [
+      "Harvest\\Formbuilder\\Console\\Commands\\FormBuilderInstallCommand"
+  ],
   "disabled": false
 }

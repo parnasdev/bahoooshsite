@@ -6,7 +6,7 @@
             @change="$dispatch('{{$eventName}}' , {id: '{{$model->id}}' ,value: $el.value})">
         @foreach ($options as $key => $option)
             <option value="{{ $key }}"
-                {{ $value === $key ? 'selected' : '' }}
+                {{ $value == $key ? 'selected' : '' }}
             >
                 {{ __($option) }}
             </option>

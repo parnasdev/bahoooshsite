@@ -227,5 +227,12 @@ return [
             'is_livewire' => true,
             'category' => 'general'
         ),
+        array(
+            'name' => 'bahooosh::components.general.form-image-section',
+            'title' => 'فرم با عکس',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
     ]
 ];

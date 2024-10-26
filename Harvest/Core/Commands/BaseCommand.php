@@ -92,11 +92,4 @@ abstract class BaseCommand extends Command implements PromptsForMissingInput
         );
     }
 
-    protected function getModuleModel($name)
-    {
-        return $name instanceof \Nwidart\Modules\Module
-            ? $name
-            : $this->laravel['modules']->findOrFail($name);
-    }
-
 }

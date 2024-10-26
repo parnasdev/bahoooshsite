@@ -39,7 +39,7 @@
                             @else
                                 <a class="f-13 text-info px-5 text-align-right pb-3"
                                    target="_blank"
-                                   href="{{ $item->path() }}"
+                                   href="{{ $column['href'] instanceof Closure ? $column['href']($item) : $column['href'] }}"
                                    style="border-bottom: 1px dashed #17a2b8">{{ $column['key'] instanceof Closure ? $column['key']($item) : $item->{$column['key']} }}</a>
                             @endif
                         @endif
