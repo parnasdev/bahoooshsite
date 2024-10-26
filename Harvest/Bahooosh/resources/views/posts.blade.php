@@ -131,6 +131,17 @@
                         prevEl: $refs.nextBtn
                     }
                 })
+                 new Swiper($refs.swiper2, {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                     centeredSlides: false,
+                     loop:false,
+                    pagination:false,
+                    navigation: {
+                        nextEl: $refs.prevBtn2,
+                        prevEl: $refs.nextBtn2
+                    }
+                })
             }
         }"
 
@@ -254,7 +265,7 @@
                     <div class="show-mobile w-full">
                         <div class="p-swiper w-full relative flex items-center justify-between mt-4">
 
-                            <div class="swiper  w-full swiperBanner" x-ref="swiper">
+                            <div class="swiper  w-full swiperBanner" x-ref="swiper2">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="img w-full">
@@ -278,7 +289,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="next-button " x-ref="nextBtn">
+                            <button class="next-button " x-ref="nextBtn2">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="38" height="38" viewBox="0 0 100 100">
                                     <defs>
@@ -320,7 +331,7 @@
                                     </g>
                                 </svg>
                             </button>
-                            <button class=" prev-button right-0" x-ref="prevBtn">
+                            <button class=" prev-button lg:right-0" x-ref="prevBtn2">
                                 <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="38" height="38" viewBox="0 0 100 100">
                                     <defs>
@@ -383,7 +394,7 @@
                             </button>
                         </div>
                         <div class="end flex justify-end">
-                            <div class="box-search bg-white flex justify-between items-center px-3">
+                            <div class="box-search w-full bg-white flex justify-between items-center px-3">
                                 <input class="text-gray-s text-normal" type="text" placeholder="جست‌و‌جو نتایج">
                                 <button>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.908" height="16.908"
@@ -400,8 +411,8 @@
                 </div>
                 <div class="show-mobile w-full">
                     <div class="row-filter mt-6 w-full flex justify-between items-center">
-                        <div class="end flex w-100 justify-end">
-                            <div class="box-search w-100 bg-white flex justify-between items-center px-3">
+                        <div style="width: 100% !important;" class="end  flex w-full justify-end md:justify-center">
+                            <div class="box-search w-full bg-white max-[600px]:w-full md:w-[50%] lg:w-[85%] flex justify-between items-center px-3">
                                 <input class="text-gray-s text-normal" type="text" placeholder="جست‌و‌جو نتایج">
                                 <button>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16.908" height="16.908"
@@ -416,7 +427,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="list-blogs my-5 w-full max-[600px]:px-3 grid grid-cols-3 gap-2 max-[600px]:grid-cols-1">
+                <div class="list-blogs my-5 w-full max-[600px]:px-3 grid lg:grid-cols-3 md:grid-cols-2 gap-2 max-[600px]:grid-cols-1">
                     <template x-for="item in 15">
                         <div class="thumbnail-blog mt-2 flex justify-between items-center bg-white w-full">
                             <div class="img-blog">
@@ -460,7 +471,7 @@
                     <button class="prev-page">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 45 45"><rect width="45" height="45" rx="15"/><path d="M0,4.418,4.418,0m0,0V14.138M4.418,0,8.836,4.418" transform="translate(29.78 18.557) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                     </button>
-                    <div class="pages gap-4 w-full flex justify-center items-center">
+                    <div class="pages lg:w-[22%] md:w-[70%] gap-4 w-full flex justify-center items-center">
                         <button class="page active-page bolX">1</button>
                         <button class="page bolX">2</button>
                         <button class="page bolX">3</button>

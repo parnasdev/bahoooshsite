@@ -506,9 +506,10 @@
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
                                     <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
                                 </div>
-                                <div class="detail-top mt-12 px-4 flex justify-center flex-col items-center w-full">
+                                <div class="detail-top mt-12 relative px-4 flex justify-center flex-col items-center w-full">
+                                    <span class="text-s text-s-mobi left-[1px] absolute top-[1px] text-small RaviBold">انتخاب هوشمندانه</span>
+
                                     <div class="text flex flex-col items-center">
-                                        <span class="text-s text-small RaviBold">انتخاب هوشمندانه</span>
                                         <h3 class="text-md RaviBold text-gray-s">اشتراک یکــساله</h3>
                                         <span class="text-small text-base RaviBold">دو ماه بیشتر ! یک سال پیشرفت.</span>
                                     </div>
@@ -845,7 +846,7 @@
             init() {
 
                 new Swiper($refs.swiper, {
-                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2.2 : 3),
+                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2 : 3),
                     spaceBetween: 15,
                      centeredSlides: true,
                      loop:true,

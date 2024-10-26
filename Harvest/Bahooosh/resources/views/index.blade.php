@@ -8,13 +8,13 @@
                     <img class="object-contain" width="170" src="img/view/png/New%20Logo%20-%20Font.png" alt="">
                 </a>
                 <ul class="menu-header h-full p-0 flex gap-16 w-2/5">
-                    <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"
+                    <li class="h-full p-link flex items-center justify-center"><a class="xl:text-[13px] md:text[9px] lg:text-[11px]  RaviBold link"
                                                                                   href="">صفحه اصلی</a></li>
-                    <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"
+                    <li class="h-full p-link flex items-center justify-center"><a class="xl:text-[13px] md:text[9px] lg:text-[11px] RaviBold link"
                                                                                   href="">قیمت‌ها</a></li>
-                    <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"
+                    <li class="h-full p-link flex items-center justify-center"><a class="xl:text-[13px] md:text[9px] lg:text-[11px] RaviBold link"
                                                                                   href="">ویژگی‌ها</a></li>
-                    <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"
+                    <li class="h-full p-link flex items-center justify-center"><a class="xl:text-[13px] md:text[9px] lg:text-[11px] RaviBold link"
                                                                                   href="">مشتریان</a></li>
                 </ul>
                 <div class="option-header flex justify-end  gap-2 w-2/5">
@@ -52,7 +52,7 @@
         </header>
 
         <div class="w-full show-mobile mt-3 px-4">
-            <header x-data="{openMenu: false}" class="header flex justify-center">
+            <header x-data="{openMenu: false}" class="header w-full flex justify-center">
                 <div style="display: none" x-show="openMenu" x-collapse.opacity.duration.700ms class="show-menu-mobile w-full p-3 h-[300px] rounded-[30px] absolute bg-white z-20">
                     <div class="row-close-btn flex justify-start">
                         <button @click="openMenu=false">
@@ -123,8 +123,7 @@
         {{------s-main------}}
         <section class="s-main mt-8">
             <div class=" prs-container">
-                <div
-                    class="p-main flex justify-between lg:flex-row xl:flex-row  items-center gap-5 w-full md:flex-col flex-mobi-col sm:flex-col">
+                <div class="p-main flex justify-between lg:flex-row xl:flex-row  items-center gap-5 w-full md:flex-col flex-mobi-col sm:flex-col">
                     <div class="text-main flex gap-3 sm:w-full flex-col items-center w-1/2">
                         <h1 class="text sm:text-xl   md:text-xl lg:text-2xl xl:text-2xl extraBold">
                             فروشگاه ساز باهوش ؛ کلیکی بسازش !
@@ -179,7 +178,7 @@
                         </ul>
                     </div>
 
-                    <div class="video-main  flex sm:w-full justify-end w-1/2">
+                    <div class="video-main  flex sm:w-full lg:justify-center xl:justify-end w-1/2">
                         <div class="box-video flex justify-center items-center  pos-relative">
                             {{--                            <button class="play-video pos-absolute cursor-pointer">--}}
                             {{--                                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90"--}}
@@ -202,10 +201,7 @@
 
         {{------s-Building-store-----}}
 
-        <section class="s-Building-store mt-20">
-            {{--            <div class="line-s2">--}}
-            {{--                <img src="img/view/svg/line-s2.svg" alt="">--}}
-            {{--            </div>--}}
+        <section class="s-Building-store md:mt-[8rem] mt-20">
             <div class="prs-container">
                 <div class="p-Building-store items-center flex flex-col w-full">
                     <div class="title-website">
@@ -259,7 +255,7 @@
                         </div>
 
                     </div>
-                    <div class="box-more-features flex justify-between items-center px-3 h-16 bg-white rounded-lg ">
+                    <div class="box-more-features lg:w-[48%] md:w-[70%] max flex justify-between items-center px-3 h-16 bg-white rounded-lg ">
                         <span class="text-base RaviBold text-normal">فروشگاه‌سازی آسان، امکانات نامحدود</span>
                         <button class="btn-base-two bg-white text-black border-2 border-black hover:bg-black hover:text-white px-4">
                             امکانات متنوع بیشتر
@@ -277,7 +273,7 @@
             init() {
 
                 new Swiper($refs.swiper, {
-                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2.2 : 3),
+                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2 : 3),
                     spaceBetween: 15,
                      centeredSlides: true,
                      loop:true,
@@ -1209,9 +1205,9 @@
         {{--s-plans--}}
 
         {{--s-support--}}
-        <section class="s-support">
+        <section class="s-support lg:h-[450px] md:h-auto">
             <div class="prs-container ">
-                <div class="p-support grid grid-cols-2 w-full h-full">
+                <div class="p-support grid md:grid-cols-1 lg:grid-cols-2 w-full h-full">
                     <div class="col-support py-9 flex flex-col items-center w-full">
                         <div class="title-website-col w-full">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 31.953 31.955">
@@ -1534,7 +1530,7 @@
             init() {
 
                 new Swiper($refs.swiper, {
-                    slidesPerView: $store.device.mobile ? 1 : 1.5,
+                    slidesPerView: $store.device.mobile ? 1 : 1.8,
                     spaceBetween: 15,
                     pagination:false,
                     navigation: {
@@ -1547,7 +1543,7 @@
 
                     >
                         <div class="w-full relative mt-6 flex justify-center items-center gap-2">
-                            <button class="absolute z-10  next-button" x-ref="nextBtn">
+                            <button class="absolute md:hidden z-10  next-button" x-ref="nextBtn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="65" height="65" viewBox="0 0 81 82">
                                     <defs>
@@ -1717,7 +1713,7 @@
                                 </div>
 
                             </div>
-                            <button class="absolute z-10 left-0 prev-button" x-ref="prevBtn">
+                            <button class="absolute md:hidden z-10 left-0 prev-button" x-ref="prevBtn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="65" height="65" viewBox="0 0 81 82">
                                     <defs>

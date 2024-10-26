@@ -179,8 +179,8 @@
                         </div>
                     </div>
                     <div class="show-mobile">
-                        <div class="list-building grid max-[600px]:grid-cols-1   gap-3 grid-cols-4 mb-5 px-4 mt-20">
-                            <div class="box-building  bg-white  w-full">
+                        <div class="list-building grid max-[500px]:grid-cols-1 md:grid-cols-2   gap-3 lg:grid-cols-4 mb-5 px-4 mt-20">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -192,7 +192,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -204,7 +204,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -216,7 +216,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -327,12 +327,12 @@
                     </div>
                     <div class="show-mobile w-full">
                         <div class="w-full gap-3 mt-10 mb-12 grid grid-cols-1">
-                            <div class="box-img flex justify-center  items-center  bg-white">
+                            <div class="box-img flex justify-center md:h-[300px]  items-center  bg-white">
                                 {{--                            <img class="w-full h-full object-cover" src="" alt="">--}}
                                 <h1 class="text-lg extraBold">...Cover image </h1>
                             </div>
-                            <div class="right w-full grid gap-2 grid-cols-1">
-                                <div class="box-building  bg-white  w-full">
+                            <div class="right w-full grid gap-2 md:grid-cols-2  grid-cols-1">
+                                <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                     <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                         <img class="img" width="70" src="img/view/png/host.png" alt="">
                                         <div class="flex flex-col items-start w-4/5">
@@ -344,7 +344,7 @@
 
                                     </div>
                                 </div>
-                                <div class="box-building  bg-white  w-full">
+                                <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                     <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                         <img class="img" width="70" src="img/view/png/host.png" alt="">
                                         <div class="flex flex-col items-start w-4/5">
@@ -660,7 +660,7 @@
             init() {
 
                 new Swiper($refs.swiper, {
-                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2.2 : 3),
+                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2 : 3),
                     spaceBetween: 15,
                      centeredSlides: true,
                      loop:true,

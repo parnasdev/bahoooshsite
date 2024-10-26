@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="show-mobile w-full">
-                        <div class="w-full flex flex-col gap-3 mb-5 px-4 max-[600px]:px-0 max-[600px]:mt-4 mt-20">
+                        <div class="w-full max-[600px]:flex max-[600px]:flex-col md:grid md:grid-cols-2 gap-3 mb-5 px-4 max-[600px]:px-0 max-[600px]:mt-4 mt-20">
                             <div class="box-building  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
@@ -117,7 +117,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -129,7 +129,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2rem]  bg-white  w-full">
                                 <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="img/view/png/host.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -199,12 +199,12 @@
                         </div>
                     </div>
                     <div class="show-mobile w-full">
-                        <div class="w-full gap-3 mt-10 mb-12 grid grid-cols-1">
+                        <div class="w-full gap-3 mt-10 md:mt-0 mb-12 grid grid-cols-1">
                             <div class=" flex justify-center  items-center">
-                                <img class="w-full scale-95 h-full object-cover"
+                                <img class="w-full md:w-[70%] scale-95 h-full object-cover"
                                      src="/img/view/png/laptop-dev.png" alt="">
                             </div>
-                            <div class="right w-full grid gap-2 grid-cols-1">
+                            <div class="right w-full grid gap-2 grid-cols-1 md:grid-cols-2">
                                 <div class="box-building  bg-white  w-full">
                                     <div class="floating-box flex flex-col gap-4 items-center w-full ">
                                         <img class="img" width="70" src="img/view/png/host.png" alt="">
@@ -234,14 +234,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div class="row-time max-[700px]:h-auto h-[260px] my-[3rem] w-full">
+        <div class="row-time max-[900px]:h-auto h-[260px] my-[3rem] w-full">
             <div class="prs-container">
-                <div class="p-time py-[2rem] max-[700px]:flex-col flex justify-between w-full">
-                    <img class="w-[100%] scale-95 min-[701px]:hidden" src="/img/view/png/clock.png" alt="">
-                    <div class="start mt-2 w-[45%] max-[700px]:w-full flex flex-col items-center">
+                <div class="p-time py-[2rem] max-[900px]:flex-col flex md:items-center lg:items-start justify-between w-full">
+                    <img class="w-[100%] md:w-[50%] scale-95 min-[901px]:hidden" src="/img/view/png/clock.png" alt="">
+                    <div class="start mt-2 w-[45%] max-[900px]:w-full flex flex-col items-center">
                         <h3 class="extraBold text-[20px]">تا دیر نشده ، از این فرصت استفاده کن !</h3>
                         <span class="text-white bolX text-[14px] mt-2">فقط با پرداخت ۲/۹۹۰ مغازتو آنلاین کن …</span>
                         <div class="time mt-[2rem] flex items-center justify-center gap-2">
@@ -279,8 +278,8 @@
 
                         </div>
                     </div>
-                    <div class="end relative bottom-[8rem] max-[700px]:w-full max-[700px]:bottom-0 w-[45%] flex flex-col justify-center items-center">
-                        <img class="w-[330px] max-[700px]:hidden" src="/img/view/png/clock.png" alt="">
+                    <div class="end relative md:bottom-0 lg:bottom-[8rem] max-[700px]:w-full max-[700px]:bottom-0 w-[45%] flex flex-col justify-center items-center">
+                        <img class="w-[330px] max-[900px]:hidden" src="/img/view/png/clock.png" alt="">
                         <button
                             class="btn-base bg-black text-white hover:bg-white hover:text-black border-2 border-black max-[600px]:w-48 mt-[2.5rem] w-64 gap-5">
                             همین حالا خرید کنید
@@ -403,18 +402,17 @@
                 </div>
             </div>
             <div class="row-four my-[9rem] max-[700px]:my-[1rem] w-full flex flex-col items-center">
-                <div
-                    class="box-subscriptions-price relative flex flex-col items-center px-3 py-[3rem] w-full max-[700px]:h-auto h-[430px] rounded-[30px] bg-white">
-                    <img class="max-[700px]:hidden absolute left-[-74px] top-[-74px] w-[150px]"
+                <div class="box-subscriptions-price relative flex flex-col items-center px-3 py-[3rem] md:w-[90%] lg:w-full max-[700px]:h-auto h-[430px] rounded-[30px] bg-white">
+                    <img class="max-[900px]:hidden absolute left-[-74px] top-[-74px] w-[150px]"
                          src="/img/view/png/img-star-box.png" alt="">
-                    <img class="max-[700px]:hidden absolute right-[-74px] bottom-[-74px] w-[150px]"
+                    <img class="max-[900px]:hidden absolute right-[-74px] bottom-[-74px] w-[150px]"
                          src="/img/view/png/img-blestik-box.png" alt="">
 
                     <h3 class="extraBold max-[700px]:text-[18px] max-[700px]:text-center text-[24px]">همین الان بهترین فرصت هست تا دیر نشده !</h3>
-                    <p class="text-gray text-[13px] max-[700px]:text-[11px] max-[700px]:text-center medium mt-2">فرم زیر را پر کنید و پرداخت خود را انجام دهید،
+                    <p class="text-gray text-[13px] max-[700px]:text-[11px] max-[700px]:text-center medium mt-2 md:text-center lg:text-justify">فرم زیر را پر کنید و پرداخت خود را انجام دهید،
                         کارشناسان باهوش جهت دریافت اطلاعات کسب و کار شما،
                         از طریق تلگرام یا تماس تلفنی ارتباط میگیرند.</p>
-                    <form class="form py-5 flex flex-wrap w-[48%] max-[700px]:w-full gap-3" action="">
+                    <form class="form py-5 flex flex-wrap lg:w-[48%] md:w-[80%] max-[700px]:w-full gap-3" action="">
                         <div class=" w-full grid grid-cols-2 gap-2">
                             <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
                                  class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
@@ -440,7 +438,7 @@
                     <div class="before-price mt-[1rem] relative">
                         <span class="text-gray-s text-[14px] max-[600px]:text-[13px] bolX">قیمت بعدا : ۳/۹۹۰ میلیون تومان</span>
                     </div>
-                    <h3 class="after-price text-[30px] text-base extraBold mt-[1.5rem]">قیمت الان : ۲/۹۹۰ میلیون
+                    <h3 class="after-price text-[30px] text-b extraBold mt-[1.5rem]">قیمت الان : ۲/۹۹۰ میلیون
                         تومان</h3>
                     <button
                         class="btn-base bg-black text-white hover:bg-white relative top-[0.7rem] hover:text-black border-2 border-black mt-6 w-64 gap-5">
@@ -459,7 +457,7 @@
             init() {
 
                 new Swiper($refs.swiper, {
-                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2.2 : 3),
+                    slidesPerView: $store.device.mobile ? 1 : ($store.device.tablet ? 2 : 3),
                     spaceBetween: 15,
                      centeredSlides: true,
                      loop:true,
@@ -805,7 +803,7 @@
                     <a class="text-gray text-[13px] max-[600px]:text-[12px]" href="">تماس باما</a>
                     <a class="text-gray text-[13px] max-[600px]:text-[12px]" href="">تعرفه ها</a>
                 </div>
-                <div class="row-copyright flex justify-start items-center gap-3 mt-[2.5rem] mb-[1.5rem] w-[60%] max-[700px]:w-full">
+                <div class="row-copyright flex justify-start items-center gap-3 mt-[2.5rem] mb-[1.5rem] md:[80%] lg:w-[60%] max-[700px]:w-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 57.249 48.922">
                         <g id="Layer_2" data-name="Layer 2" transform="translate(1.755 1.97)">
                             <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">

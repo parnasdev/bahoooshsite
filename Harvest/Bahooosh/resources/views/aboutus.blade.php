@@ -121,13 +121,15 @@
                              class="img-right top-0 right-2 absolute">
                     </div>
                 </div>
-                <div class="row-two sm:mt-28 max-[700px]:gap-4 flex max-[700px]:flex-col justify-between items-start">
+                <div
+                    class="row-two sm:mt-28 max-[700px]:gap-4 flex max-[700px]:flex-col md:flex-col lg:flex-row justify-between lg:items-start md:items-center">
                     <div
-                        class="box-img md:ml-6 w-1/2 max-[700px]:w-full bg-white flex justify-center items-center relative overflow-hidden">
+                        class="box-img md:ml-0 lg:ml-6 md:w-full lg:w-1/2 max-[700px]:w-full bg-white flex justify-center items-center relative overflow-hidden">
                         <h1>Cover image ...</h1>
                         {{--                        <img class="w-full h-full object-cover" src="" alt="">--}}
                     </div>
-                    <div class="box-end w-1/2 max-[700px]:w-full flex flex-col items-start">
+                    <div
+                        class="box-end lg:w-1/2 md:w-full md:mt-[2rem] lg:mt-0 max-[700px]:w-full flex flex-col items-start">
                         <div class="title-website-s relative">
                             <h2>راه‌اندازی سریع و آسان</h2>
                         </div>
@@ -178,7 +180,7 @@
                                     {{--                            <img class="w-full h-full object-cover" src="" alt="">--}}
                                     <h1 class="text-lg extraBold">...Cover image </h1>
                                 </div>
-                                <div class="right w-full grid gap-2 grid-cols-1">
+                                <div class="right w-full grid gap-2 md:grid-cols-2 md:mt-[4rem] grid-cols-1">
                                     <div class="box-building  bg-white  w-full">
                                         <div class="floating-box px-3 flex flex-col gap-4 items-center w-full ">
                                             <img class="img" width="70" src="/img/view/png/3deg.png" alt="">

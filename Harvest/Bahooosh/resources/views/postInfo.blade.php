@@ -145,9 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="row-detail-blog gap-10 w-full my-12 max-[700px]:flex-col flex justify-between items-start relative">
-                    <div class="sticky-row max-[700px]:w-full max-[700px]:relative w-3/12 sticky top-2">
+                <div class="row-detail-blog gap-10 w-full my-12 max-[700px]:flex-col md:flex-col lg:flex-row md:items-center flex justify-between lg:items-start relative">
+                    <div class="sticky-row max-[700px]:w-full max-[700px]:relative md:relative md:w-[50%] lg:w-3/12 lg:sticky top-2">
                         <img class="img-blog-info w-full h-72 rounded-3xl " src="/img/view/png/kids-info-blog.png"
                              alt="">
                         <div class="w-full flex items-center gap-3 justify-start mt-3">
@@ -193,7 +192,7 @@
                                 خودشان در فرانسه اطلاعات کسب کنند.</p>
                             <div class="w-full my-[2rem] flex justify-start">
                                 <div
-                                    class="box-list shadow-md  flex flex-col items-start p-3 rounded-[30px] h-[250px] max-[600px]:h-auto max-[600px]:w-full w-[60%]">
+                                    class="box-list shadow-md  flex flex-col items-start p-3 rounded-[30px] h-[250px] max-[600px]:h-auto max-[600px]:w-full md:w-[80%] lg:w-[60%]">
                                     <div class="flex w-full border-box-list-title justify-start items-center gap-2">
                                         <div class="circle w-[7px] h-[7px] bg-base rounded-[50%]"></div>
                                         <h4 class="">فهرست عناوین</h4>
@@ -259,8 +258,7 @@
                                 <a class="text-light bolX text-small item" href="">برچسب 4 ،</a>
                             </div>
                         </div>
-                        <div
-                            class="row-users mt-4 relative max-[700px]:items-start w-full flex justify-between items-center">
+                        <div class="row-users mt-4 relative max-[700px]:items-start w-full flex justify-between items-center">
                             <div class="start flex flex-col max-[700px]:w-full items-start w-2/3">
                                 <h4 class="bolX text-base text-md">نظرات کاربران</h4>
                                 <span class="text-gray-s text-small medium mt-4">دقت کنید</span>

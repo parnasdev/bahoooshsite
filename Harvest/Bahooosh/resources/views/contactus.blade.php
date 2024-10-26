@@ -122,137 +122,153 @@
                              class="img-right top-0 right-2 absolute">
                     </div>
                 </div>
-                <div class="row-two sm:mt-28 max-[700px]:gap-4 flex max-[700px]:flex-col justify-between items-start">
-                    <div class="box-start w-1/2 max-[700px]:w-full flex flex-col items-start">
+                <div class="row-two sm:mt-28 max-[900px]:gap-4 flex max-[900px]:flex-col-reverse  justify-between lg:items-start md:items-center">
+                    <div class="box-start lg:w-1/2 md:w-[80%] max-[700px]:w-full flex flex-col items-start">
                         <form class="form py-5 flex flex-wrap w-full gap-3" action="">
-                            <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
-                                 class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
-                                <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
-                                       :class="inp === true ? 'labelUp':'labeDown bolX'"
-                                       class="text-light p-x-2 text-normal " for="">نام و نام خانوادگی *</label>
-                                <input x-ref="input" class="mt-3 text-normal" style="display: none"
-                                       @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
-                                       x-transition type="text">
-                            </div>
-                            <div class=" w-full grid grid-cols-2 gap-2">
+                            <div class="flex w-full flex-col items-start">
                                 <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
                                      class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
                                     <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
                                            :class="inp === true ? 'labelUp':'labeDown bolX'"
-                                           class="text-light p-x-2 text-normal " for="">شماره همراه *</label>
+                                           class="text-light p-x-2 text-normal " for="">نام و نام خانوادگی *</label>
                                     <input x-ref="input" class="mt-3 text-normal" style="display: none"
                                            @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
                                            x-transition type="text">
                                 </div>
-                                <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
-                                     class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
-                                    <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
-                                           :class="inp === true ? 'labelUp':'labeDown bolX'"
-                                           class="text-light p-x-2 text-normal " for="">ایمیل (اختیاری)</label>
-                                    <input x-ref="input" class="mt-3 text-normal" style="display: none"
-                                           @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
-                                           x-transition type="text">
+                                <span class="text-[12px] mt-2 text-red-700 bolX">نام و نام خانوادگی را وارد کنید</span>
+                            </div>
+                            <div class=" w-full grid grid-cols-2 gap-2">
+                                <div class="flex w-full flex-col items-start">
+                                    <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
+                                         class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
+                                        <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
+                                               :class="inp === true ? 'labelUp':'labeDown bolX'"
+                                               class="text-light p-x-2 text-normal " for="">شماره همراه *</label>
+                                        <input x-ref="input" class="mt-3 text-normal" style="display: none"
+                                               @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
+                                               x-transition type="text">
+                                    </div>
+                                    <span class="text-[12px] mt-2 text-red-700 bolX">نام و نام خانوادگی را وارد کنید</span>
+                                </div>
+
+                                <div class="flex w-full flex-col items-start">
+                                    <div x-data="{inp:false}" :class="inp===true? 'active-border':'deactive-border'"
+                                         class="inp-full gap-3 px-3 flex flex-col items-start justify-center w-full bg-white">
+                                        <label @click="inp=true ; $nextTick(() => { $refs.input.focus(); })"
+                                               :class="inp === true ? 'labelUp':'labeDown bolX'"
+                                               class="text-light p-x-2 text-normal " for="">ایمیل (اختیاری)</label>
+                                        <input x-ref="input" class="mt-3 text-normal" style="display: none"
+                                               @click.outside="$el.value.length > 1 ? inp= true :inp=false" x-show="inp"
+                                               x-transition type="text">
+                                    </div>
+                                    <span class="text-[12px] mt-2 text-red-700 bolX">نام و نام خانوادگی را وارد کنید</span>
                                 </div>
 
                             </div>
                             {{--singleSelect--}}
-                            <div
-                                class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
-                                x-data="{select:false , text: 'انتخاب کنید' }">
-                                <div @click="select=true"
-                                     class="head w-full h-[50px] flex justify-between items-center">
-                                    <h4 x-text="text" class="text-light bolX text-[13px]"></h4>
-                                    <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
-                                         xmlns="http://www.w3.org/2000/svg" width="13" height="7"
-                                         viewBox="0 0 16.854 8.635">
-                                        <path id="fi-rr-angle-small-right"
-                                              d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
-                                              transform="translate(21.853 -9.104) rotate(90)"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
-                                     @click.outside="select=false"
-                                     x-collapse.duration.500ms x-show="select">
-                                    <div
-                                        class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
-                                        <template x-for="item in 4">
-                                            <div @click="select=false"
-                                                 class="item w-full px-3 h-[60px] border-b-2 border-gray-200 flex items-center justify-between">
-                                                <h4 x-model="text" class="text-[13px] text-gray medium  m-0 p-0">آیتم
-                                                    1</h4>
-                                                <img class="w-[45px] h-[45px] rounded-[50%]"
-                                                     src="/img/view/png/square-aprat.png" alt="">
-                                            </div>
-                                        </template>
+                            <div class="flex w-full flex-col items-start">
+                                <div
+                                    class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
+                                    x-data="{select:false , text: 'انتخاب کنید' }">
+                                    <div @click="select=true"
+                                         class="head w-full h-[50px] flex justify-between items-center">
+                                        <h4 x-text="text" class="text-light bolX text-[13px]"></h4>
+                                        <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
+                                             xmlns="http://www.w3.org/2000/svg" width="13" height="7"
+                                             viewBox="0 0 16.854 8.635">
+                                            <path id="fi-rr-angle-small-right"
+                                                  d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
+                                                  transform="translate(21.853 -9.104) rotate(90)"/>
+                                        </svg>
+                                    </div>
+                                    <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
+                                         @click.outside="select=false"
+                                         x-collapse.duration.500ms x-show="select">
+                                        <div
+                                            class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
+                                            <template x-for="item in 4">
+                                                <div @click="select=false"
+                                                     class="item w-full px-3 h-[60px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                    <h4 x-model="text" class="text-[13px] text-gray medium  m-0 p-0">آیتم
+                                                        1</h4>
+                                                    <img class="w-[45px] h-[45px] rounded-[50%]"
+                                                         src="/img/view/png/square-aprat.png" alt="">
+                                                </div>
+                                            </template>
+                                        </div>
                                     </div>
                                 </div>
+                                <span class="text-[12px] mt-2 text-red-700 bolX">انتخاب یک آیتم اجباری است</span>
                             </div>
                             {{--singleSelect--}}
 
                             {{--multiSelect--}}
-                            <div
-                                class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
-                                x-data="{multiSelect:false}">
-                                <div @click="multiSelect=!multiSelect"
-                                     class="head w-full h-[50px] flex justify-between items-center">
-                                    <h4 class="text-light bolX text-[13px]">چند تا انتخاب کنید</h4>
-                                    <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
-                                         xmlns="http://www.w3.org/2000/svg" width="13" height="7"
-                                         viewBox="0 0 16.854 8.635">
-                                        <path id="fi-rr-angle-small-right"
-                                              d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
-                                              transform="translate(21.853 -9.104) rotate(90)"/>
-                                    </svg>
-                                </div>
-                                <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
-                                     @click.outside="multiSelect=false"
-                                     x-collapse.duration.500ms x-show="multiSelect">
-                                    <div
-                                        class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
+                            <div class="flex w-full flex-col items-start">
+                                <div
+                                    class="w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]"
+                                    x-data="{multiSelect:false}">
+                                    <div @click="multiSelect=!multiSelect"
+                                         class="head w-full h-[50px] flex justify-between items-center">
+                                        <h4 class="text-light bolX text-[13px]">چند تا انتخاب کنید</h4>
+                                        <svg class="transition ease-in-out" :class="select ? 'rotate-180 ':''"
+                                             xmlns="http://www.w3.org/2000/svg" width="13" height="7"
+                                             viewBox="0 0 16.854 8.635">
+                                            <path id="fi-rr-angle-small-right"
+                                                  d="M16.683,10.874,11.158,5.349a1.2,1.2,0,1,0-1.7,1.709L15,12.572a1.2,1.2,0,0,1,0,1.709L9.46,19.794a1.2,1.2,0,0,0,1.7,1.709l5.525-5.525A3.611,3.611,0,0,0,16.683,10.874Z"
+                                                  transform="translate(21.853 -9.104) rotate(90)"/>
+                                        </svg>
+                                    </div>
+                                    <div class="absolute top-[55px] z-10 right-0  w-full" style="display: none"
+                                         @click.outside="multiSelect=false"
+                                         x-collapse.duration.500ms x-show="multiSelect">
                                         <div
-                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
-                                            <div class="flex items-center">
-                                                <input id="default-checkbox" type="checkbox" value=""
-                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="default-checkbox"
-                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
-                                                    انتخابی 1</label>
+                                            class="w-full flex flex-col shadow-md overflow-y-auto bg-white h-[270px] rounded-[10px]">
+                                            <div
+                                                class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <input id="default-checkbox" type="checkbox" value=""
+                                                           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox"
+                                                           class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                        انتخابی 1</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
-                                            <div class="flex items-center">
-                                                <input id="default-checkbox" type="checkbox" value=""
-                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="default-checkbox"
-                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
-                                                    انتخابی 1</label>
+                                            <div
+                                                class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <input id="default-checkbox" type="checkbox" value=""
+                                                           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox"
+                                                           class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                        انتخابی 1</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
-                                            <div class="flex items-center">
-                                                <input id="default-checkbox" type="checkbox" value=""
-                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="default-checkbox"
-                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
-                                                    انتخابی 1</label>
+                                            <div
+                                                class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <input id="default-checkbox" type="checkbox" value=""
+                                                           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox"
+                                                           class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                        انتخابی 1</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
-                                            <div class="flex items-center">
-                                                <input id="default-checkbox" type="checkbox" value=""
-                                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="default-checkbox"
-                                                       class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
-                                                    انتخابی 1</label>
+                                            <div
+                                                class="item w-full px-3 h-[50px] border-b-2 border-gray-200 flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <input id="default-checkbox" type="checkbox" value=""
+                                                           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox"
+                                                           class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">ایتم
+                                                        انتخابی 1</label>
+                                                </div>
                                             </div>
+
                                         </div>
 
                                     </div>
-
                                 </div>
+                                <span class="text-[12px] mt-2 text-red-700 bolX">انتخاب یک آیتم اجباری است</span>
                             </div>
                             {{--multiSelect--}}
 
@@ -288,8 +304,7 @@
                             </div>
                         </form>
                     </div>
-                    <div
-                        class="box-img md:mr-6 w-1/2 max-[700px]:w-full bg-white flex justify-center items-center relative overflow-hidden">
+                    <div class="box-img md:mr-6 lg:w-1/2 md:w-[80%] max-[700px]:w-full bg-white flex justify-center items-center relative overflow-hidden">
                         <h1>Cover image ...</h1>
                         {{--                        <img class="w-full h-full object-cover" src="" alt="">--}}
                     </div>
@@ -350,8 +365,8 @@
 
                     </div>
                     <div class="show-mobile w-full">
-                        <div class="w-full gap-3 mt-10 max-[700px]:mt-3 mb-12 grid grid-cols-1">
-                            <div class="box-building  bg-white  w-full">
+                        <div class="w-full gap-3 mt-10 max-[700px]:mt-3 md:grid-cols-2 mb-12 grid grid-cols-1">
+                            <div class="box-building md:mt-[2.5rem]  bg-white  w-full">
                                 <div class="floating-box px-3 flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="/img/view/png/headphone.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -366,7 +381,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2.5rem]  bg-white  w-full">
                                 <div class="floating-box px-3 flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="/img/view/png/square-telgeram.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -379,7 +394,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2.5rem]  bg-white  w-full">
                                 <div class="floating-box px-3 flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="/img/view/png/square-instagram.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
@@ -392,7 +407,7 @@
 
                                 </div>
                             </div>
-                            <div class="box-building  bg-white  w-full">
+                            <div class="box-building md:mt-[2.5rem]  bg-white  w-full">
                                 <div class="floating-box px-3 flex flex-col gap-4 items-center w-full ">
                                     <img class="img" width="70" src="/img/view/png/square-aprat.png" alt="">
                                     <div class="flex flex-col items-start w-4/5">
