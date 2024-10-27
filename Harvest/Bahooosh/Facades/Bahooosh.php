@@ -28,6 +28,8 @@ class Bahooosh extends Facade
               Route::get($page->slug, Pages\IndexPage::class);
           }
 
+          Route::get('posts/{post:slug}', Pages\PostShow::class)->name('posts.show');
+
       });
     }
 }

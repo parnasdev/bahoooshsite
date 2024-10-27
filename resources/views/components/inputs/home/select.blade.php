@@ -1,4 +1,5 @@
 @props(['multiple' => false])
+<div class="flex w-full flex-col items-start">
 @if(!$multiple)
     <div
         {{ $attributes->only('class')->merge(['class' => 'w-full cursor-pointer relative bg-white selectBase flex flex-col px-2  rounded-[10px]']) }}
@@ -12,13 +13,15 @@
 
                 this.text = text
                 this.value = value
+
+                $wire.set('{{$attributes->wire('model')->value}}' , this.value)
             }
         }" @on-selected="onSelected">
         <div @click="select=true"
              class="head w-full h-[50px] flex justify-between items-center">
             <h4 x-show="text.length > 0" x-text="text" class="text-dark bolX text-[13px]"></h4>
             <h4 x-show="text.length == 0" x-text="placeholder" class="text-light bolX text-[13px]"></h4>
-            <input type="hidden" x-model="value" {{ $attributes->wire('model') }}>
+            <input type="hidden" x-model="value">
             <svg class="transition ease-in-out" :class="select && 'rotate-180'"
                  xmlns="http://www.w3.org/2000/svg" width="13" height="7"
                  viewBox="0 0 16.854 8.635">
@@ -35,6 +38,7 @@
                     {{ $slot }}
             </div>
         </div>
+
     </div>
 @else
     <div
@@ -91,5 +95,9 @@
         </div>
     </div>
 @endif
+    @error($attributes->wire('model')->value)
+    <span class="text-[12px] mt-2 text-red-700 bolX">{{$message}}</span>
+    @enderror
+</div>
 
 

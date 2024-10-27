@@ -53,7 +53,7 @@
 
             @foreach($blockForm->data['licences'] as $index1 => $social_link)
                 <div class="d-flex flex-wrap justify-content-between align-items-center flex-100 mb-10">
-                    <div class="flex-5"><span class="f-16 f-bold">{{ $index + 1 }}</span></div>
+                    <div class="flex-5"><span class="f-16 f-bold">{{ $index1 + 1 }}</span></div>
                     <x-inputs.panel.textarea class="flex-20" label="کد نماد" wire:model="blockForm.data.licences.{{ $index1 }}.code" />
                     <x-buttons.panel.button type="button" class="justify-content-end flex-10" color="danger" wire:click="deleteLicence({{ $index1 }})">
                         <x-utils.icons icon="trash" fill="#fff" />

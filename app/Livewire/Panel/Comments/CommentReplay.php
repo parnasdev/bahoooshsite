@@ -18,7 +18,7 @@ class CommentReplay extends ModalComponent
 
     public function render()
     {
-        return view('livewire.tenant.panel.comments.comment-replay');
+        return view('livewire.panel.comments.comment-replay');
     }
 
     public static function modalMaxWidthClass(): string
@@ -32,7 +32,7 @@ class CommentReplay extends ModalComponent
     }
 
     public function submit() {
-        $this->replay->name = user()->fullName;
+        $this->replay->name = user()->name;
         $this->validate();
         $this->replay->parent_id = $this->comment->id;
         $this->replay->commentable_id = $this->comment->commentable_id;

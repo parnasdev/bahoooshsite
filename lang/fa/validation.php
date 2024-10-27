@@ -269,6 +269,7 @@ return array(
         "tenant.activity" => 'نوع فعالیت',
         "tenant.category_id" => 'دسته بندی',
         "tenant.referrer" => 'معرف',
+        "rate" => 'امتیاز',
         // "chosenAddress" => '',
     ),
 );

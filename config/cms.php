@@ -8,5 +8,5 @@ return [
     // footer component without package name
     'footer_id' => env('FOOTER_ID'),
     // route prefix for test ui
-    'prefix_route' => 'pages'
+    'prefix_route' => ''
 ];

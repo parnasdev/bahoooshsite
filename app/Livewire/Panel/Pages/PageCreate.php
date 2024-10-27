@@ -13,6 +13,7 @@ use App\Traits\LoadTheme;
 use App\Traits\WithFilesLivewire;
 use App\Traits\WithTag;
 use Cviebrock\EloquentSluggable\Services\SlugService;
+use Livewire\Attributes\Computed;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
@@ -91,9 +92,11 @@ class PageCreate extends Component
     }
 
     #[On('updateBlock')]
+    #[Computed]
     public function getBlocks()
     {
-        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item')->get()->toArray();
+        $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item'))->orderBy('order_item')->get()
+            ->toArray();
     }
 
     public function deleteComponent(Block $block)

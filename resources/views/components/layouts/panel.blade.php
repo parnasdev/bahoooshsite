@@ -6,6 +6,7 @@
         <meta name="csrf_token" content="{{ csrf_token() }}"/>
         <title>{{ $title ?? 'Page Title' }}</title>
         @vite(['resources/css/admin/admin.scss', 'resources/js/admin/admin.js'])
+        <link rel="stylesheet" href="/assets/jalalidatepicker/jalalidatepicker.min.css">
     </head>
     <body x-data>
     @auth
@@ -38,6 +39,7 @@
     <script src="/assets/plugins/tinymce/jquery.tinymce.min.js"></script>
     <script src="/assets/plugins/tinymce/tinymce.min.js"></script>
     <script src="/assets/chart/chart.js"></script>
+    <script type="text/javascript" src="/assets/jalalidatepicker/jalalidatepicker.min.js"></script>
     @stack('scripts')
     @livewire('wire-elements-modal')
     <x-utils.panel-alert />

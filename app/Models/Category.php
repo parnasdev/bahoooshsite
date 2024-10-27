@@ -24,6 +24,7 @@ class Category extends Model
     protected $fillable = [
         'id',
         'name',
+        'user_id',
         'slug',
         'parent_id',
         'description',
@@ -73,10 +74,10 @@ class Category extends Model
 
     public function path()
     {
-        return match ($this->post_type->name) {
+        return '#'; /** match ($this->post_type->name) {
             'post' => $this->cat_type->name == 'tag' ?  route('tag.posts.index' , ['category' => $this->slug]) : route('category.posts.index' , ['category' => $this->slug]),
             'product' => $this->cat_type->name == 'tag' ? route('tag.products.index' , ['category' => $this->slug]) : route('category.products.index' , ['category' => $this->slug]),
-        };
+        };**/
     }
 
 }

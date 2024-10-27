@@ -176,7 +176,7 @@
                                                                             </div>
                                                                         </button>
                                                                     @endif
-                                                                    <button wire:click="$dispatch('openModal' ,{component: 'tenant.panel.comments.comment-replay' ,arguments:{'incomment': {{ $comment->id }} } })"
+                                                                    <button wire:click="$dispatch('openModal' ,{component: 'panel.comments.comment-replay' ,arguments:{'incomment': {{ $comment->id }} } })"
                                                                             class="bg-primary parnas-data d-flex align-items-center justify-content-center ml-5"
                                                                             style="border-radius: 10px;width:35px;height:35px">
                                                                         <div

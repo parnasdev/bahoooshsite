@@ -1,7 +1,6 @@
-<script type="text/javascript" src="/assets/jalalidatepicker/jalalidatepicker.min.js"></script>
-<link rel="stylesheet" href="/assets/jalalidatepicker/jalalidatepicker.min.css">
 
-<div {{ $attributes->whereDoesntStartWith('wire:model')->merge(['class' => 'c-input']) }}>
+
+<div {{ $attributes->whereDoesntStartWith('wire:model')->merge(['class' => 'c-input']) }} id="dp-holder">
     @if($label ?? false)
         <div class="d-flex justify-content-start m-left-auto pos-relative pr-5">
             <label class="d-flex f-14 text-63">
@@ -22,6 +21,7 @@
     <input type="{{ $type ?? 'text' }}" class="border-light" data-jdp x-data="{
                 init() {
                     jalaliDatepicker.startWatch({
+                        container: '#dp-holder',
                         time: @js($attributes['withTime'] ?? ''),
                         minDate: 'attr',
                         maxDate: 'attr'

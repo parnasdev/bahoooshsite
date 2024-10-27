@@ -7,10 +7,6 @@ use Livewire\Form;
 
 class CommentForm extends Form
 {
-    #[Rule('required' , 'string' , 'max:100')]
-    public $name = '';
-    #[Rule('nullable' , 'email' , 'max:50')]
-    public $email = '';
     #[Rule('required' , 'string' , 'max:10000')]
     public $body = '';
     #[Rule('required' , 'numeric' , 'min:1' , 'max:5')]

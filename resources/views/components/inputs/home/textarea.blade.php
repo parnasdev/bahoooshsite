@@ -4,6 +4,6 @@
     <textarea class="w-full" {{ $attributes->whereStartsWith(['placeholder' , 'cols' , 'rows'])->merge(['placeholder' => $label ?? $attributes['placeholder']]) }} {{ $attributes->wire('model') }}></textarea>
 
     @error($attributes->wire('model')->value)
-    <span class="text-sm text-red-600">{{ $message }}</span>
+    <span class="text-[12px] mt-2 text-red-700 bolX">{{$message}}</span>
     @enderror
 </div>

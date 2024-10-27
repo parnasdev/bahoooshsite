@@ -100,9 +100,7 @@ class PageEdit extends Component
     public function getBlocks()
     {
         $this->post->blocks = $this->post->post->blocks()->whereNull('parent_id')->with('children' , fn($q) => $q->with('children' , fn($q) => $q->orderBy('order_item'))->orderBy('order_item'))->orderBy('order_item')->get()
-            ->each(function ($block , $key) {
-
-            })->toArray();
+            ->toArray();
     }
 
     public function deleteComponent(Block $block)

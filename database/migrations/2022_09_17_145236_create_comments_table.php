@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('approved')->default(0);
             $table->bigInteger('commentable_id');
             $table->string('commentable_type');
-            $table->integer('rate')->nullable();
+            $table->tinyInteger('rate')->nullable();
             $table->timestamps();
         });
     }

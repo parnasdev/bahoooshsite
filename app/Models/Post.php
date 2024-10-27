@@ -59,9 +59,9 @@ class Post extends Model implements CanVisit
     ];
 
 
-    public function path($variant = null)
+    public function path()
     {
-        return '#';
+        return route('posts.show' , ['post' => $this->slug]);
     }
 
     public function scopeIsPublish($query)

@@ -6,7 +6,6 @@ use App\Models\Block;
 use App\Models\Setting;
 use Livewire\Attributes\Title;
 use Livewire\Component;
-use Stancl\Tenancy\Database\Models\Domain;
 
 class PublicForm extends Component
 {
@@ -28,11 +27,13 @@ class PublicForm extends Component
 
     public function mount()
     {
-        $setting = ['siteLogos', 'favicon', 'favicon', 'footer' , 'header', 'profile_image_default','post_thumbnail_default' , 'logo_size', 'header_banner'];
+        $setting = ['siteLogos', 'favicon', 'favicon', 'footer' , 'header', 'profile_image_default','post_thumbnail_default' , 'logo_size', 'header_banner' , 'banner_info'];
         foreach ($setting as $item) {
             if ($item == 'logo_size') {
                 $this->setting[$item] = empty(getValue($item)) ? ['width' => '' , 'height' => ''] : getValue($item);
             } elseif($item == 'header_banner') {
+                $this->setting[$item] = empty(getValue($item)) ? ['path' => '' , 'alt' => '' , 'link' => ''] : getValue($item);
+            } elseif ($item == 'banner_info') {
                 $this->setting[$item] = empty(getValue($item)) ? ['path' => '' , 'alt' => '' , 'link' => ''] : getValue($item);
             } else {
                 $this->setting[$item] = getValue($item);
@@ -70,5 +71,17 @@ class PublicForm extends Component
         }
 
         $this->dispatch('toast-message', message: 'تنظیمات اعمال شد.', icon: 'success');
+    }
+
+    public function deleteBanner()
+    {
+        $setting = Setting::query()->where('name', 'banner_info')->first();
+
+        if (!empty($setting)) {
+            $setting->delete();
+            $this->setting['banner_info'] = empty(getValue('banner_info')) ? ['path' => '' , 'alt' => '' , 'link' => ''] : getValue('banner_info');
+        }
+
+        $this->dispatch('toast-message', message: 'بنر حذف شد.', icon: 'success');
     }
 }

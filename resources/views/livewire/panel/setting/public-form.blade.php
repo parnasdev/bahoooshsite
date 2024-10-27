@@ -26,6 +26,14 @@
                     فوتر
                 </button>
             </div>
+
+            <div class="c-btn ml-7 pb-5">
+                <button type="button" class="ancher btn-effect bg-info text-white radius-5"
+                        @click="changeTab = 'banner_info'" :class="{ 'bg-secondary': changeTab === 'banner_info' }">
+                    <div class="circle-solid top-right bg-white"></div>
+                    بنر در بلاگ
+                </button>
+            </div>
         </div>
 
         <div x-show="changeTab == 'logo'">
@@ -41,7 +49,8 @@
                     </div>
                 </div>
                 <div class="flex-100 m-flex-100 mb-12">
-                    <div class="flex-100 m-flex-100 d-flex flex-wrap align-items-center justify-content-start px-10 py-15 pr-30 m-px-0">
+                    <div
+                        class="flex-100 m-flex-100 d-flex flex-wrap align-items-center justify-content-start px-10 py-15 pr-30 m-px-0">
                         <div class="flex-15 m-flex-45 mb-2 ml-12" x-data="{
                             files: @entangle('setting.siteLogos').live,
                             filemangerCallback(e) {
@@ -84,9 +93,9 @@
                                         </div>
                                         <div x-show="files !== ''">
                                             <div
-                                                    class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
+                                                class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
                                                 <div
-                                                        class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
+                                                    class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
                                                     <img src="{{ asset($setting['siteLogos']) }}"
                                                          class="object-fit-cover mx-5"
                                                          width="80" style="width:100%;height: 110px">
@@ -103,13 +112,13 @@
                                                                       stroke="#ff383f" stroke-width="2"
                                                                       stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                             </svg>
                                                         </button>
                                                     </div>
@@ -167,9 +176,9 @@
                                         </div>
                                         <div x-show="files.length > 0">
                                             <div
-                                                    class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
+                                                class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
                                                 <div
-                                                        class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
+                                                    class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
                                                     <img src="{{ asset($setting['favicon']) }}"
                                                          class="object-fit-cover mx-5"
                                                          width="80" style="width:100%;height: 115px">
@@ -186,13 +195,13 @@
                                                                       stroke="#ff383f" stroke-width="2"
                                                                       stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                             </svg>
                                                         </button>
                                                     </div>
@@ -245,9 +254,9 @@
                                         </div>
                                         <div x-show="files.length > 0">
                                             <div
-                                                    class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
+                                                class="flex-98 d-flex flex-wrap align-items-start justify-content-start ml-3">
                                                 <div
-                                                        class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
+                                                    class="flex-100 d-flex flex-wrap align-items-center justify-content-around bg-light text-white py-5 radius-5 mb-4 pos-relative">
                                                     <img src="{{ asset($setting['post_thumbnail_default']) }}"
                                                          class="object-fit-cover mx-5"
                                                          width="80" style="width:100%;height: 115px">
@@ -264,13 +273,13 @@
                                                                       stroke="#ff383f" stroke-width="2"
                                                                       stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M3.85938 9.07617H26.8071V9.07617C25.0914 9.07617 24.2336 9.07617 23.6689 9.56799C23.5996 9.62832 23.5346 9.69336 23.4743 9.76264C22.9824 10.3273 22.9824 11.1851 22.9824 12.9008V21.6909C22.9824 23.5765 22.9824 24.5193 22.3967 25.1051C21.8109 25.6909 20.8681 25.6909 18.9824 25.6909H11.684C9.79837 25.6909 8.85556 25.6909 8.26977 25.1051C7.68399 24.5193 7.68399 23.5765 7.68399 21.6909V12.9008C7.68399 11.1851 7.68399 10.3273 7.19217 9.76264C7.13184 9.69336 7.0668 9.62832 6.99752 9.56799C6.43283 9.07617 5.57501 9.07617 3.85938 9.07617V9.07617Z"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                                 <path
-                                                                        d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
-                                                                        stroke="#ff383f" stroke-width="2"
-                                                                        stroke-linecap="round"/>
+                                                                    d="M12.8702 4.43653C13.0155 4.30065 13.3356 4.18058 13.7809 4.09494C14.2262 4.00931 14.7718 3.96289 15.3331 3.96289C15.8944 3.96289 16.44 4.00931 16.8853 4.09494C17.3306 4.18058 17.6507 4.30065 17.7959 4.43653"
+                                                                    stroke="#ff383f" stroke-width="2"
+                                                                    stroke-linecap="round"/>
                                                             </svg>
                                                         </button>
                                                     </div>
@@ -376,7 +385,8 @@
                             <div class="rx-border-rectangle-after"></div>
                         </div>
                     </div>
-                    <livewire:dynamic-component :is="$headerBlock->component_name" :key="$headerBlock->component_name" :block="$headerBlock" :is_edit="true"/>
+                    <livewire:dynamic-component :is="$headerBlock->component_name" :key="$headerBlock->component_name"
+                                                :block="$headerBlock" :is_edit="true"/>
                 </div>
             </div>
         </div>
@@ -393,11 +403,36 @@
                             <div class="rx-border-rectangle-after"></div>
                         </div>
                     </div>
-                    <livewire:dynamic-component :is="$footerBlock->component_name" :key="$footerBlock->component_name" :block="$footerBlock" :is_edit="true"/>
+                    <livewire:dynamic-component :is="$footerBlock->component_name" :key="$footerBlock->component_name"
+                                                :block="$footerBlock" :is_edit="true"/>
                 </div>
             </div>
         </div>
-        <div class="c-btn justify-content-end pt-10" x-show="changeTab == 'logo'">
+
+        <div x-show="changeTab === 'banner_info'">
+            <div class="d-flex flex-wrap justify-content-start mt-10">
+                <div class="flex-100">
+                    <div class="rx-title pb-10">
+                        <div class="text pr-7">
+                            <h6>تنظیمات بنر بلاگ</h6>
+                        </div>
+                        <div class="p-rx">
+                            <div class="rx-border-rectangle"></div>
+                            <div class="rx-border-rectangle-after"></div>
+                        </div>
+                    </div>
+                </div>
+                <x-buttons.panel.button type="button" color="danger" class="justify-content-end flex-100" wire:click="deleteBanner">حذف بنر</x-buttons.panel.button>
+                <x-inputs.panel.single-file-picker label="عکس بنر" class="flex-48 m-flex-100 align-items-center ml-10"
+                                                   wire:model="setting.banner_info.path"/>
+
+                <x-inputs.panel.text label="جایاب عکس" class="flex-48 m-flex-100 align-items-center" wire:model="setting.banner_info.alt"/>
+
+                <x-inputs.panel.text label="لینک بنر" class="flex-100" wire:model="setting.banner_info.link"/>
+            </div>
+
+        </div>
+        <div class="c-btn justify-content-end pt-10" x-show="['logo' , 'banner_info'].includes(changeTab)">
             <button class="btn bg-primary justify-content-end text-white radius-5">
                 اعمال تغییرات
             </button>

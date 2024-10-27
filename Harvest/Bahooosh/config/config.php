@@ -234,5 +234,27 @@ return [
             'is_livewire' => true,
             'category' => 'general'
         ),
+
+        array(
+            'name' => 'bahooosh::components.layouts.landing-header',
+            'title' => 'هدر لندینک',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
+        array(
+            'name' => 'bahooosh::components.layouts.landing-footer',
+            'title' => 'فوتر لندینک',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
+        array(
+            'name' => 'bahooosh::components.general.timer-section',
+            'title' => 'تایمر',
+            'data' => [],
+            'is_livewire' => true,
+            'category' => 'general'
+        ),
     ]
 ];
