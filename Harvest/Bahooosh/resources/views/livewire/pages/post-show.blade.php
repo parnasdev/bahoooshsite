@@ -1,11 +1,16 @@
-<x-slot:pageClass>postsPage</x-slot:pageClass>
+<x-slot:class>postsPage</x-slot>
 <div>
+
     <livewire:dynamic-component :is="$headerBlock->component_name" :key="$headerBlock->component_name" :block="$headerBlock"/>
     <div class="prs-container" x-data="{
         init() {
             const editorContent = $refs.content
             const titleList = $refs.titleList
-            const headings = editorContent.querySelectorAll('h2 , h3');
+            const titleListParent = $refs.titleListParent
+            const headings = editorContent.querySelectorAll('h2');
+            if (headings.length == 0) {
+                titleListParent.style.display = 'none'
+            }
             headings.forEach((heading, index) => {
                 const id = `heading-${index + 1}`;
                 heading.id = id;
@@ -25,6 +30,7 @@
         }
 
     }">
+
         <div class="w-full items-center justify-start pt-3  flex-col">
             <div class="row-one mt-10">
                 <div class="text-main max-[600px]:w-full flex gap-3 sm:w-full flex-col items-center w-1/2">
@@ -109,7 +115,7 @@
                         class="box-editor flex flex-col items-center justify-start relative p-7 bg-white   rounded-3xl w-full">
                         <p>{{ $post->description }}</p>
                         <div class="w-full my-[2rem] flex justify-start">
-                            <div
+                            <div x-ref="titleListParent"
                                 class="box-list shadow-md  flex flex-col items-start p-3 rounded-[30px] h-[250px] max-[600px]:h-auto max-[600px]:w-full md:w-[80%] lg:w-[60%]">
                                 <div class="flex w-full border-box-list-title justify-start items-center gap-2">
                                     <div class="circle w-[7px] h-[7px] bg-base rounded-[50%]"></div>

@@ -14,7 +14,6 @@ use Livewire\WithPagination;
 class IndexPage extends Component
 {
     use LoadPage;
-
     public function pageRoute(): string
     {
         $prefix = config('cms.prefix_route');

@@ -5,7 +5,7 @@
             <div
                 class="box-header w-full my-3 bg-white h-20 rounded-xl flex align-center px-5 items-center justify-center">
                 <a href="" class="logo-website w-1/5 flex align-center">
-                    <img class="object-contain" width="170" src="img/view/png/New%20Logo%20-%20Font.png" alt="">
+                    <img class="object-contain" width="170" src="/img/view/png/New%20Logo%20-%20Font.png" alt="">
                 </a>
                 <ul class="menu-header h-full p-0 flex gap-16 w-2/5">
                     <li class="h-full p-link flex items-center justify-center"><a class="text-normal RaviBold link"
@@ -70,7 +70,7 @@
 
                         </button>
                         <a href="" class="logo-website  flex align-center">
-                            <img class="object-contain" width="100" src="img/view/png/New%20Logo%20-%20Font.png" alt="">
+                            <img class="object-contain" width="100" src="/img/view/png/New%20Logo%20-%20Font.png" alt="">
                         </a>
                     </div>
                     <div class="end gap-2 flex items-center">
@@ -116,8 +116,8 @@
                         </button>
                     </div>
                     <div class="border-row-one relative flex justify-content-end mt-20 mb-12 border-t-2 border-black">
-                        <img width="85" src="img/view/png/img-left-price.png" alt="" class="img-left absolute">
-                        <img width="40" src="img/view/png/img-arrow-right.png" alt=""
+                        <img width="85" src="/img/view/png/img-left-price.png" alt="" class="img-left absolute">
+                        <img width="40" src="/img/view/png/img-arrow-right.png" alt=""
                              class="img-right top-0 right-2 absolute">
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                         <div class="list-plans mx-auto mt-14 mb-6 w-full grid grid-cols-3 gap-3">
                             <div class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative bottom-1" width="40" src="img/view/png/Polygon-1.png" alt="">
+                                    <img class="relative bottom-1" width="40" src="/img/view/png/Polygon-1.png" alt="">
                                 </div>
                                 <div class="detail-top mt-12 px-4 flex justify-between items-center w-full">
                                     <div class="text flex flex-col">
@@ -163,53 +163,53 @@
                                 </div>
                                 <div class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -232,7 +232,7 @@
                             </div>
                             <div class="thumbnail-plan thumbnail-plan-special bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
+                                    <img class="relative" width="40" src="/img/view/png/Polygon-2.png" alt="">
                                 </div>
                                 <div class="detail-top mt-12 px-4 flex justify-between items-center w-full">
                                     <div class="text flex flex-col">
@@ -247,53 +247,53 @@
                                 </div>
                                 <div class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -316,7 +316,7 @@
                             </div>
                             <div class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative" width="40" src="img/view/png/Polygon-3.png" alt="">
+                                    <img class="relative" width="40" src="/img/view/png/Polygon-3.png" alt="">
                                 </div>
                                 <div class="detail-top mt-12 px-4 flex justify-between items-center w-full">
                                     <div class="text flex flex-col">
@@ -330,53 +330,53 @@
                                 </div>
                                 <div class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -405,7 +405,7 @@
                             <div x-data="{showMore:false}"
                                  class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative bottom-1" width="40" src="img/view/png/Polygon-1.png" alt="">
+                                    <img class="relative bottom-1" width="40" src="/img/view/png/Polygon-1.png" alt="">
                                 </div>
                                 <div
                                     class="detail-top mt-14 px-4 flex flex-col items-center justify-content-center w-full">
@@ -447,53 +447,53 @@
                                 <div style="display: none" x-collapse x-show="showMore"
                                      class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -504,7 +504,7 @@
                             <div x-data="{showMore:false}"
                                  class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative" width="40" src="img/view/png/Polygon-2.png" alt="">
+                                    <img class="relative" width="40" src="/img/view/png/Polygon-2.png" alt="">
                                 </div>
                                 <div class="detail-top mt-12 relative px-4 flex justify-center flex-col items-center w-full">
                                     <span class="text-s text-s-mobi left-[1px] absolute top-[1px] text-small RaviBold">انتخاب هوشمندانه</span>
@@ -547,53 +547,53 @@
                                 <div style="display: none" x-collapse x-show="showMore"
                                      class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="no-feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/cancel.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/cancel.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -602,7 +602,7 @@
                             <div x-data="{showMore:false}"
                                  class="thumbnail-plan bg-white flex flex-col items-center justify-start relative">
                                 <div class="polygon-circle flex items-center absolute z-10 bg-white  justify-center">
-                                    <img class="relative" width="40" src="img/view/png/Polygon-3.png" alt="">
+                                    <img class="relative" width="40" src="/img/view/png/Polygon-3.png" alt="">
                                 </div>
                                 <div class="detail-top mt-12 px-4 flex flex-col justify-center items-center w-full">
                                     <div class="text flex flex-col items-center">
@@ -642,53 +642,53 @@
                                 <div style="display: none" x-collapse x-show="showMore"
                                      class="features-list px-6 flex w-full flex-col items-start  mt-8 gap-3">
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">هاست ابری نامحدود رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">حسابداری، انبارداری آنلاین</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">دسترسی به تمامی ابزار های هوش مصنوعی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به دامنه شخصی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">اتصال به کانال های فروش (ترب، ایمالز، ذره‌بین)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7 روز تست رایگان</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">7پشتیبانی رایگان (از ساعت ۹ صبح الی ۱۸ عصر)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">طراحی گرافیکی اولیه سایت و چیدمان فنی</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">مشاوره دریافت اینماد و درگاه پرداخت مناسب</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span class="text-small mt-1 text-gray RaviBold">بارگذاری محصولات اولیه سایت تا ۳۰ محصول</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">پرداخت اشتراک بصورت اقساطی (۳ قسط)</span>
                                     </div>
                                     <div class="feature flex justify-start gap-2 w-full">
-                                        <img class="object-contain" width="18" src="img/view/png/tick.png" alt="">
+                                        <img class="object-contain" width="18" src="/img/view/png/tick.png" alt="">
                                         <span
                                             class="text-small mt-1 text-gray RaviBold">مشاوره رایگان سئو و افزایش فروش</span>
                                     </div>
@@ -902,7 +902,7 @@
                                     <div class="box-store flex flex-col items-center w-full">
                                         <div class="logo-store flex items-center justify-content-center p-2">
                                             <div class="img p-2 bg-white flex items-center justify-content-center">
-                                                <img src="img/view/png/rahino.png" alt="">
+                                                <img src="/img/view/png/rahino.png" alt="">
                                             </div>
                                         </div>
                                         <div class="row-title relative bottom-6 w-full flex justify-between px-5">
@@ -921,7 +921,7 @@
                                     <div class="box-store flex flex-col items-center w-full">
                                         <div class="logo-store flex items-center justify-content-center p-2">
                                             <div class="img p-2 bg-white flex items-center justify-content-center">
-                                                <img src="img/view/png/rahino.png" alt="">
+                                                <img src="/img/view/png/rahino.png" alt="">
                                             </div>
                                         </div>
                                         <div class="row-title relative bottom-6 w-full flex justify-between px-5">
@@ -940,7 +940,7 @@
                                     <div class="box-store flex flex-col items-center w-full">
                                         <div class="logo-store flex items-center justify-content-center p-2">
                                             <div class="img p-2 bg-white flex items-center justify-content-center">
-                                                <img src="img/view/png/rahino.png" alt="">
+                                                <img src="/img/view/png/rahino.png" alt="">
                                             </div>
                                         </div>
                                         <div class="row-title relative bottom-6 w-full flex justify-between px-5">
@@ -959,7 +959,7 @@
                                     <div class="box-store flex flex-col items-center w-full">
                                         <div class="logo-store flex items-center justify-content-center p-2">
                                             <div class="img p-2 bg-white flex items-center justify-content-center">
-                                                <img src="img/view/png/rahino.png" alt="">
+                                                <img src="/img/view/png/rahino.png" alt="">
                                             </div>
                                         </div>
                                         <div class="row-title relative bottom-6 w-full flex justify-between px-5">
@@ -978,7 +978,7 @@
                                     <div class="box-store flex flex-col items-center w-full">
                                         <div class="logo-store flex items-center justify-content-center p-2">
                                             <div class="img p-2 bg-white flex items-center justify-content-center">
-                                                <img src="img/view/png/rahino.png" alt="">
+                                                <img src="/img/view/png/rahino.png" alt="">
                                             </div>
                                         </div>
                                         <div class="row-title relative bottom-6 w-full flex justify-between px-5">

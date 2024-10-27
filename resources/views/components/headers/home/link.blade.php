@@ -1,7 +1,7 @@
 @props(['link' => null])
 
 @if($link->is_link)
-    <a {{ $attributes->only('class') }} href="{{ $link->linktable?->path() ?? $link->href }}">
+    <a {{ $attributes->only('class') }} href="{{ $link->linktable?->path() ?? $link->href }}" {{ !empty($link->linktable) ? 'wire:navigate' : '' }}>
         @empty($link->icon)
         @else
             <x-utils.icons :icon="$link->icon" fill="#000" />

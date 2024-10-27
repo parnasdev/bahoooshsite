@@ -6,24 +6,30 @@ use App\Enums\BlockCategory;
 use App\Enums\PageType;
 use App\Models\Block;
 use App\Models\Page;
+use Artesaos\SEOTools\Facades\SEOTools;
 
 trait LoadPage
 {
     public Page $page;
     private bool $justLoadLayout = false;
 
-    public Block | null $headerBlock;
-    public Block | null $footerBlock;
+    public Block|null $headerBlock = null;
+    public Block|null $footerBlock = null;
 
     public $blocks;
 
     public function mountLoadPage(): void
     {
-        $this->headerBlock = ($this->page->options['show_header'] ?? true) ? Block::query()->find(config('cms.header_id')) : null;
-        $this->footerBlock = ($this->page->options['show_footer'] ?? true) ? Block::query()->find(config('cms.footer_id')) : null;
+
         if (!$this->getJustLoadLayout()) {
             $this->blocks = collect();
             $this->page = Page::findBySlugOrFail($this->pageRoute());
+
+            SEOTools::setTitle($this->page->title)
+                ->setDescription($this->page->description)
+                ->jsonLd()->setType('WebPage');
+            ;
+
 
             $this->blocks = $this->page->blocks()->whereNull('parent_id')->get();
             if ($this->page->options['page_type'] == PageType::TEXT_MODE->value) {
@@ -51,15 +57,22 @@ trait LoadPage
                     $staticBlock->save();
                 }
             }
+
+
+            $this->headerBlock = ($this->page->options['show_header'] ?? true) ? Block::query()->find(config('cms.header_id')) : null;
+            $this->footerBlock = ($this->page->options['show_footer'] ?? true) ? Block::query()->find(config('cms.footer_id')) : null;
+
             if (!empty($this->headerBlock)) {
                 $this->blocks->push($this->headerBlock);
             }
 
-            if (!empty($footerBlock)) {
+            if (!empty($this->footerBlock)) {
                 $this->blocks->push($this->footerBlock);
             }
+        } else {
+            $this->headerBlock = Block::query()->find(config('cms.header_id'));
+            $this->footerBlock = Block::query()->find(config('cms.footer_id'));
         }
-
 
 
     }

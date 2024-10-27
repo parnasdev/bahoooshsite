@@ -20,10 +20,10 @@
             <span class="text-small text-light bolX">{{ jdate($post->created_at)->format('d %B Y') }}</span>
         </div>
         <h3 class="title-blog mt-3">
-            <a class="bolX text-normal" href="{{ $post->path() }}">{{ $post->title }}</a>
+            <a class="bolX text-normal" href="{{ $post->path() }}" wire:navigate>{{ $post->title }}</a>
         </h3>
         <div class="row-link w-full mt-5 flex justify-end">
-            <a href="{{ $post->path() }}">
+            <a href="{{ $post->path() }}" wire:navigate>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="8"
                      viewBox="0 0 28.889 12.382">
                     <path id="fi-rr-arrow-alt-left"

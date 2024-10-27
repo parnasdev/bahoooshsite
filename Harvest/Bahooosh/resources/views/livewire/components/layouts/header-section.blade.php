@@ -1,7 +1,8 @@
 <div>
     @if(!$is_edit)
         {{--------header--------}}
-        <header x-data x-show="window.innerWidth> 900" class="prs-container header">
+{{--        x-show="window.innerWidth> 900"--}}
+        <header x-data  class="prs-container header show-desktop">
             <div
                 class="box-header w-full my-3 bg-white h-20 rounded-xl flex align-center px-5 items-center justify-center">
                 <a href="/" class="logo-website w-1/5 flex align-center">

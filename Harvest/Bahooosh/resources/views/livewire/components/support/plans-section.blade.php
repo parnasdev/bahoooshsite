@@ -6,7 +6,7 @@
                 <h2>{{ $block->data['title'] }}</h2>
             </div>
             <div class="show-desktop">
-                <div class="list-plans mx-auto mt-14 mb-6 w-11/12 grid grid-cols-3 gap-3">
+                <div class="list-plans mx-auto mt-14 mb-6 w-full grid grid-cols-3 gap-3">
                     @foreach($block->data['plans'] as $plan)
                         <div
                             class="thumbnail-plan {{ $plan['is_special'] ? 'thumbnail-plan-special' : '' }} bg-white flex flex-col items-center justify-start relative">

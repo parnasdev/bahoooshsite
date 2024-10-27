@@ -4,10 +4,10 @@ namespace Harvest\Bahooosh\Livewire\Pages;
 
 use App\Enums\CategoryType;
 use App\Models\Post;
+use Artesaos\SEOTools\Facades\SEOTools;
 use Harvest\Bahooosh\Traits\LoadPage;
 use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
-
 class PostShow extends Component
 {
     use LoadPage;
@@ -20,9 +20,14 @@ class PostShow extends Component
 
     public array | null $banner = [];
 
+
     public function mount() : void
     {
         $this->post->visit()->dailyIntervals()->withIp();
+        SEOTools::setTitle($this->post->title)->setDescription($this->post->description)
+            ->addImages($this->post->files->pluck('path')->map(fn($item) => storage_url($item))->first())
+        ->jsonLd()->setType('Article');
+
         $categories = Cache::flexible('post_show_categories' , [5 , 10] , function () {
             return $this->post->categories()->get();
         });

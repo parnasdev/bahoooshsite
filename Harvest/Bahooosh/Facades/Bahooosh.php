@@ -21,15 +21,14 @@ class Bahooosh extends Facade
 
     public static function routes($prefix = null)
     {
-        $pages = Page::query()->latest()->where('status' , PostStatus::PUBLISHED)->get();
-       //TODO: Dynamic This
-      Route::prefix($prefix)->middleware('web')->group(function () use ($pages) {
-          foreach ($pages as $page) {
-              Route::get($page->slug, Pages\IndexPage::class);
-          }
+        $pages = Page::query()->latest()->where('status', PostStatus::PUBLISHED)->get();
+        Route::prefix($prefix)->middleware('web')->group(function () use ($pages) {
+            foreach ($pages as $page) {
+                Route::get($page->slug, Pages\IndexPage::class);
+            }
 
-          Route::get('posts/{post:slug}', Pages\PostShow::class)->name('posts.show');
+            Route::get('posts/{post:slug}', Pages\PostShow::class)->name('posts.show');
 
-      });
+        });
     }
 }
